@@ -1,0 +1,838 @@
+<!DOCTYPE html><html lang="en" data-scrapbook-source="https://bitcoinpenguins.io/" data-scrapbook-create="20250805020502003" data-scrapbook-adoptedstylesheet-0=":host { z-index: var(--w3m-z-index); display: block; backface-visibility: hidden; position: fixed; inset: 0px; pointer-events: none; opacity: 0; background-color: var(--wui-cover); transition: opacity 0.2s var(--wui-ease-out-power-2); will-change: opacity; }
+
+:host(.open) { opacity: 1; }
+
+:host(.appkit-modal) { position: relative; pointer-events: unset; background: none; width: 100%; opacity: 1; }
+
+wui-card { max-width: var(--w3m-modal-width); width: 100%; position: relative; animation-duration: ; animation-timing-function: ; animation-delay: ; animation-iteration-count: ; animation-direction: ; animation-play-state: ; animation-name: ; animation-timeline: ; animation-range-start: ; animation-range-end: ; animation-fill-mode: backwards; outline: none; transition: border-radius var(--wui-duration-lg) var(--wui-ease-out-power-1),
+      background-color var(--wui-duration-lg) var(--wui-ease-out-power-1); will-change: border-radius, background-color; }
+
+:host(.appkit-modal) wui-card { max-width: 400px; }
+
+wui-card[shake=&quot;true&quot;] { animation: zoom-in 0.2s var(--wui-ease-out-power-2),
+      w3m-shake 0.5s var(--wui-ease-out-power-2); }
+
+wui-flex { overflow: hidden auto; display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
+
+@media (max-height: 700px) and (min-width: 431px) {
+  wui-flex { align-items: flex-start; }
+  wui-card { margin: var(--wui-spacing-xxl) 0px; }
+}
+
+@media (max-width: 430px) {
+  wui-flex { align-items: flex-end; }
+  wui-card { max-width: 100%; border-bottom-left-radius: var(--local-border-bottom-mobile-radius); border-bottom-right-radius: var(--local-border-bottom-mobile-radius); border-bottom: none; animation: slide-in 0.2s var(--wui-ease-out-power-2); }
+  wui-card[shake=&quot;true&quot;] { animation: slide-in 0.2s var(--wui-ease-out-power-2),
+        w3m-shake 0.5s var(--wui-ease-out-power-2); }
+}
+
+@keyframes zoom-in {
+  0% { transform: scale(0.95) translateY(0px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes slide-in {
+  0% { transform: scale(1) translateY(50px); }
+  100% { transform: scale(1) translateY(0px); }
+}
+
+@keyframes w3m-shake {
+  0% { transform: scale(1) rotate(0deg); }
+  20% { transform: scale(1) rotate(-1deg); }
+  40% { transform: scale(1) rotate(1.5deg); }
+  60% { transform: scale(1) rotate(-1.5deg); }
+  80% { transform: scale(1) rotate(1deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes w3m-view-height {
+  0% { height: var(--prev-height); }
+  100% { height: var(--new-height); }
+}"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="57bc5a5ffe061d24.css" data-precedence="next"><link rel="stylesheet" href="6587c4e04534f2a0.css" data-precedence="next"><meta name="next-size-adjust" content=""><meta name="theme-color" content="#000000"><title>Bitcoin Penguins | Meet The Friendliest Birds On The Blockchain</title><meta name="description" content="Join Bitcoin Penguins - a new Web3 crypto presale ($BPENGU) built on kindness, community and the power of hodling."><link rel="canonical" href="https://bitcoinpenguins.io/"><link rel="alternate" hreflang="en" href="https://bitcoinpenguins.io/"><link rel="alternate" hreflang="zh" href="https://bitcoinpenguins.io/zh"><link rel="alternate" hreflang="de" href="https://bitcoinpenguins.io/de"><link rel="alternate" hreflang="nl" href="https://bitcoinpenguins.io/nl"><link rel="alternate" hreflang="ja" href="https://bitcoinpenguins.io/ja"><link rel="alternate" hreflang="ko" href="https://bitcoinpenguins.io/ko"><link rel="alternate" hreflang="fr" href="https://bitcoinpenguins.io/fr"><link rel="alternate" hreflang="es" href="https://bitcoinpenguins.io/es"><link rel="alternate" hreflang="it" href="https://bitcoinpenguins.io/it"><link rel="alternate" hreflang="pl" href="https://bitcoinpenguins.io/pl"><link rel="alternate" hreflang="ro" href="https://bitcoinpenguins.io/ro"><link rel="alternate" hreflang="vn" href="https://bitcoinpenguins.io/vn"><link rel="alternate" hreflang="sk" href="https://bitcoinpenguins.io/sk"><link rel="alternate" hreflang="pt" href="https://bitcoinpenguins.io/pt"><link rel="alternate" hreflang="tr" href="https://bitcoinpenguins.io/tr"><link rel="alternate" hreflang="th" href="https://bitcoinpenguins.io/th"><meta property="og:title" content="Bitcoin Penguins | Meet The Friendliest Birds On The Blockchain"><meta property="og:description" content="Join Bitcoin Penguins - a new Web3 crypto presale ($BPENGU) built on kindness, community and the power of hodling."><meta property="og:url" content="https://bitcoinpenguins.io"><meta property="og:image" content="https://bitcoinpenguins.io/featured-image.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Bitcoin Penguins | Meet The Friendliest Birds On The Blockchain"><meta name="twitter:description" content="Join Bitcoin Penguins - a new Web3 crypto presale ($BPENGU) built on kindness, community and the power of hodling."><meta name="twitter:image" content="https://bitcoinpenguins.io/featured-image.jpg"><link rel="shortcut icon" href="icon.svg"><link rel="icon" href="icon.svg"><style type="text/css">.rfm-marquee-container {
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: var(--width);
+  transform: var(--transform);
+}
+.rfm-marquee-container:hover div {
+  animation-play-state: var(--pause-on-hover);
+}
+.rfm-marquee-container:active div {
+  animation-play-state: var(--pause-on-click);
+}
+
+.rfm-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.rfm-overlay::before, .rfm-overlay::after {
+  background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: var(--gradient-width);
+  z-index: 2;
+  pointer-events: none;
+  touch-action: none;
+}
+.rfm-overlay::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.rfm-overlay::before {
+  left: 0;
+  top: 0;
+}
+
+.rfm-marquee {
+  flex: 0 0 auto;
+  min-width: var(--min-width);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
+  animation-play-state: var(--play);
+  animation-delay: var(--delay);
+  animation-direction: var(--direction);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.rfm-initial-child-container {
+  flex: 0 0 auto;
+  display: flex;
+  min-width: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rfm-child {
+  transform: var(--transform);
+}</style><meta http-equiv="origin-trial" content="A41wt2Lsq30A9Ox/WehogvJckPI4aY9RoSxhb8FMtVnqaUle1AtI6Yf7Wk+7+Wm0AfDDOkMX+Wn6wnDpBWYgWwYAAAB8eyJvcmlnaW4iOiJodHRwczovL2Fkcm9sbC5jb206NDQzIiwiZmVhdHVyZSI6IkludGVyZXN0Q29ob3J0QVBJIiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><style>
+      @import url("css2.css");
+      @keyframes w3m-shake {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        20% {
+          transform: scale(1) rotate(-1deg);
+        }
+        40% {
+          transform: scale(1) rotate(1.5deg);
+        }
+        60% {
+          transform: scale(1) rotate(-1.5deg);
+        }
+        80% {
+          transform: scale(1) rotate(1deg);
+        }
+        100% {
+          transform: scale(1) rotate(0deg);
+        }
+      }
+      @keyframes w3m-iframe-fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in {
+        0% {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes w3m-iframe-zoom-in-mobile {
+        0% {
+          transform: scale(0.95);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      :root {
+        --w3m-modal-width: 360px;
+        --w3m-color-mix-strength: 0%;
+        --w3m-font-family: Inter, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;;
+        --w3m-font-size-master: 10px;
+        --w3m-border-radius-master: 4px;
+        --w3m-z-index: 999;
+
+        --wui-font-family: var(--w3m-font-family);
+
+        --wui-font-size-mini: calc(var(--w3m-font-size-master) * 0.8);
+        --wui-font-size-micro: var(--w3m-font-size-master);
+        --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
+        --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
+        --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
+        --wui-font-size-medium: calc(var(--w3m-font-size-master) * 1.8);
+        --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
+        --wui-font-size-title-6: calc(var(--w3m-font-size-master) * 2.2);
+        --wui-font-size-medium-title: calc(var(--w3m-font-size-master) * 2.4);
+        --wui-font-size-2xl: calc(var(--w3m-font-size-master) * 4);
+
+        --wui-border-radius-5xs: var(--w3m-border-radius-master);
+        --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
+        --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
+        --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
+        --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
+        --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
+        --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
+        --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
+        --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+
+        --wui-font-weight-light: 400;
+        --wui-font-weight-regular: 500;
+        --wui-font-weight-medium: 600;
+        --wui-font-weight-bold: 700;
+
+        --wui-letter-spacing-2xl: -1.6px;
+        --wui-letter-spacing-medium-title: -0.96px;
+        --wui-letter-spacing-title-6: -0.88px;
+        --wui-letter-spacing-large: -0.8px;
+        --wui-letter-spacing-medium: -0.72px;
+        --wui-letter-spacing-paragraph: -0.64px;
+        --wui-letter-spacing-small: -0.56px;
+        --wui-letter-spacing-tiny: -0.48px;
+        --wui-letter-spacing-micro: -0.2px;
+        --wui-letter-spacing-mini: -0.16px;
+
+        --wui-spacing-0: 0px;
+        --wui-spacing-4xs: 2px;
+        --wui-spacing-3xs: 4px;
+        --wui-spacing-xxs: 6px;
+        --wui-spacing-2xs: 7px;
+        --wui-spacing-xs: 8px;
+        --wui-spacing-1xs: 10px;
+        --wui-spacing-s: 12px;
+        --wui-spacing-m: 14px;
+        --wui-spacing-l: 16px;
+        --wui-spacing-2l: 18px;
+        --wui-spacing-xl: 20px;
+        --wui-spacing-xxl: 24px;
+        --wui-spacing-2xl: 32px;
+        --wui-spacing-3xl: 40px;
+        --wui-spacing-4xl: 90px;
+        --wui-spacing-5xl: 95px;
+
+        --wui-icon-box-size-xxs: 14px;
+        --wui-icon-box-size-xs: 20px;
+        --wui-icon-box-size-sm: 24px;
+        --wui-icon-box-size-md: 32px;
+        --wui-icon-box-size-mdl: 36px;
+        --wui-icon-box-size-lg: 40px;
+        --wui-icon-box-size-2lg: 48px;
+        --wui-icon-box-size-xl: 64px;
+
+        --wui-icon-size-inherit: inherit;
+        --wui-icon-size-xxs: 10px;
+        --wui-icon-size-xs: 12px;
+        --wui-icon-size-sm: 14px;
+        --wui-icon-size-md: 16px;
+        --wui-icon-size-mdl: 18px;
+        --wui-icon-size-lg: 20px;
+        --wui-icon-size-xl: 24px;
+        --wui-icon-size-xxl: 28px;
+
+        --wui-wallet-image-size-inherit: inherit;
+        --wui-wallet-image-size-sm: 40px;
+        --wui-wallet-image-size-md: 56px;
+        --wui-wallet-image-size-lg: 80px;
+
+        --wui-visual-size-size-inherit: inherit;
+        --wui-visual-size-sm: 40px;
+        --wui-visual-size-md: 55px;
+        --wui-visual-size-lg: 80px;
+
+        --wui-box-size-md: 100px;
+        --wui-box-size-lg: 120px;
+
+        --wui-ease-out-power-2: cubic-bezier(0, 0, 0.22, 1);
+        --wui-ease-out-power-1: cubic-bezier(0, 0, 0.55, 1);
+
+        --wui-ease-in-power-3: cubic-bezier(0.66, 0, 1, 1);
+        --wui-ease-in-power-2: cubic-bezier(0.45, 0, 1, 1);
+        --wui-ease-in-power-1: cubic-bezier(0.3, 0, 1, 1);
+
+        --wui-ease-inout-power-1: cubic-bezier(0.45, 0, 0.55, 1);
+
+        --wui-duration-lg: 200ms;
+        --wui-duration-md: 125ms;
+        --wui-duration-sm: 75ms;
+
+        --wui-path-network-sm: path(
+          'M15.4 2.1a5.21 5.21 0 0 1 5.2 0l11.61 6.7a5.21 5.21 0 0 1 2.61 4.52v13.4c0 1.87-1 3.59-2.6 4.52l-11.61 6.7c-1.62.93-3.6.93-5.22 0l-11.6-6.7a5.21 5.21 0 0 1-2.61-4.51v-13.4c0-1.87 1-3.6 2.6-4.52L15.4 2.1Z'
+        );
+
+        --wui-path-network-md: path(
+          'M43.4605 10.7248L28.0485 1.61089C25.5438 0.129705 22.4562 0.129705 19.9515 1.61088L4.53951 10.7248C2.03626 12.2051 0.5 14.9365 0.5 17.886V36.1139C0.5 39.0635 2.03626 41.7949 4.53951 43.2752L19.9515 52.3891C22.4562 53.8703 25.5438 53.8703 28.0485 52.3891L43.4605 43.2752C45.9637 41.7949 47.5 39.0635 47.5 36.114V17.8861C47.5 14.9365 45.9637 12.2051 43.4605 10.7248Z'
+        );
+
+        --wui-path-network-lg: path(
+          'M78.3244 18.926L50.1808 2.45078C45.7376 -0.150261 40.2624 -0.150262 35.8192 2.45078L7.6756 18.926C3.23322 21.5266 0.5 26.3301 0.5 31.5248V64.4752C0.5 69.6699 3.23322 74.4734 7.6756 77.074L35.8192 93.5492C40.2624 96.1503 45.7376 96.1503 50.1808 93.5492L78.3244 77.074C82.7668 74.4734 85.5 69.6699 85.5 64.4752V31.5248C85.5 26.3301 82.7668 21.5266 78.3244 18.926Z'
+        );
+
+        --wui-width-network-sm: 36px;
+        --wui-width-network-md: 48px;
+        --wui-width-network-lg: 86px;
+
+        --wui-height-network-sm: 40px;
+        --wui-height-network-md: 54px;
+        --wui-height-network-lg: 96px;
+
+        --wui-icon-size-network-xs: 12px;
+        --wui-icon-size-network-sm: 16px;
+        --wui-icon-size-network-md: 24px;
+        --wui-icon-size-network-lg: 42px;
+
+        --wui-color-inherit: inherit;
+
+        --wui-color-inverse-100: #fff;
+        --wui-color-inverse-000: #000;
+
+        --wui-cover: rgba(20, 20, 20, 0.8);
+
+        --wui-color-modal-bg: var(--wui-color-modal-bg-base);
+
+        --wui-color-accent-100: var(--wui-color-accent-base-100);
+        --wui-color-accent-090: var(--wui-color-accent-base-090);
+        --wui-color-accent-080: var(--wui-color-accent-base-080);
+
+        --wui-color-success-100: var(--wui-color-success-base-100);
+        --wui-color-success-125: var(--wui-color-success-base-125);
+
+        --wui-color-warning-100: var(--wui-color-warning-base-100);
+
+        --wui-color-error-100: var(--wui-color-error-base-100);
+        --wui-color-error-125: var(--wui-color-error-base-125);
+
+        --wui-color-blue-100: var(--wui-color-blue-base-100);
+        --wui-color-blue-90: var(--wui-color-blue-base-90);
+
+        --wui-icon-box-bg-error-100: var(--wui-icon-box-bg-error-base-100);
+        --wui-icon-box-bg-blue-100: var(--wui-icon-box-bg-blue-base-100);
+        --wui-icon-box-bg-success-100: var(--wui-icon-box-bg-success-base-100);
+        --wui-icon-box-bg-inverse-100: var(--wui-icon-box-bg-inverse-base-100);
+
+        --wui-all-wallets-bg-100: var(--wui-all-wallets-bg-100);
+
+        --wui-avatar-border: var(--wui-avatar-border-base);
+
+        --wui-thumbnail-border: var(--wui-thumbnail-border-base);
+
+        --wui-wallet-button-bg: var(--wui-wallet-button-bg-base);
+
+        --wui-box-shadow-blue: var(--wui-color-accent-glass-020);
+      }
+
+      @supports (background: color-mix(in srgb, white 50%, black)) {
+        :root {
+          --wui-color-modal-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-modal-bg-base)
+          );
+
+          --wui-box-shadow-blue: color-mix(in srgb, var(--wui-color-accent-100) 20%, transparent);
+
+          --wui-color-accent-100: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 100%,
+            transparent
+          );
+          --wui-color-accent-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-090: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 90%,
+            transparent
+          );
+          --wui-color-accent-glass-080: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 80%,
+            transparent
+          );
+          --wui-color-accent-glass-020: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 20%,
+            transparent
+          );
+          --wui-color-accent-glass-015: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 15%,
+            transparent
+          );
+          --wui-color-accent-glass-010: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 10%,
+            transparent
+          );
+          --wui-color-accent-glass-005: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 5%,
+            transparent
+          );
+          --wui-color-accent-002: color-mix(
+            in srgb,
+            var(--wui-color-accent-base-100) 2%,
+            transparent
+          );
+
+          --wui-color-fg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-100)
+          );
+          --wui-color-fg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-125)
+          );
+          --wui-color-fg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-150)
+          );
+          --wui-color-fg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-175)
+          );
+          --wui-color-fg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-200)
+          );
+          --wui-color-fg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-225)
+          );
+          --wui-color-fg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-250)
+          );
+          --wui-color-fg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-275)
+          );
+          --wui-color-fg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-300)
+          );
+          --wui-color-fg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-325)
+          );
+          --wui-color-fg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-fg-350)
+          );
+
+          --wui-color-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-100)
+          );
+          --wui-color-bg-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-125)
+          );
+          --wui-color-bg-150: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-150)
+          );
+          --wui-color-bg-175: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-175)
+          );
+          --wui-color-bg-200: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-200)
+          );
+          --wui-color-bg-225: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-225)
+          );
+          --wui-color-bg-250: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-250)
+          );
+          --wui-color-bg-275: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-275)
+          );
+          --wui-color-bg-300: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-300)
+          );
+          --wui-color-bg-325: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-325)
+          );
+          --wui-color-bg-350: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-bg-350)
+          );
+
+          --wui-color-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-100)
+          );
+          --wui-color-success-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-success-base-125)
+          );
+
+          --wui-color-warning-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-warning-base-100)
+          );
+
+          --wui-color-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-100)
+          );
+          --wui-color-blue-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-100)
+          );
+          --wui-color-blue-90: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-blue-base-90)
+          );
+          --wui-color-error-125: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-color-error-base-125)
+          );
+
+          --wui-icon-box-bg-error-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-error-base-100)
+          );
+          --wui-icon-box-bg-accent-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-blue-base-100)
+          );
+          --wui-icon-box-bg-success-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-success-base-100)
+          );
+          --wui-icon-box-bg-inverse-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-icon-box-bg-inverse-base-100)
+          );
+
+          --wui-all-wallets-bg-100: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-all-wallets-bg-100)
+          );
+
+          --wui-avatar-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-avatar-border-base)
+          );
+
+          --wui-thumbnail-border: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-thumbnail-border-base)
+          );
+
+          --wui-wallet-button-bg: color-mix(
+            in srgb,
+            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--wui-wallet-button-bg-base)
+          );
+        }
+      }
+    </style><style media="enabled">
+      :root {
+        --w3m-color-mix: #000;
+        --w3m-accent: hsla(231, 100%, 70%, 1);
+        --w3m-default: #000;
+
+        --wui-color-modal-bg-base: #fff;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(231, 100%, 70%, 1);
+        --wui-color-blueberry-090: hsla(231, 97%, 72%, 1);
+        --wui-color-blueberry-080: hsla(231, 92%, 74%, 1);
+
+        --wui-color-fg-100: #141414;
+        --wui-color-fg-125: #2d3131;
+        --wui-color-fg-150: #474d4d;
+        --wui-color-fg-175: #636d6d;
+        --wui-color-fg-200: #798686;
+        --wui-color-fg-225: #828f8f;
+        --wui-color-fg-250: #8b9797;
+        --wui-color-fg-275: #95a0a0;
+        --wui-color-fg-300: #9ea9a9;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #d0d0d0;
+
+        --wui-color-bg-100: #ffffff;
+        --wui-color-bg-125: #f5fafa;
+        --wui-color-bg-150: #f3f8f8;
+        --wui-color-bg-175: #eef4f4;
+        --wui-color-bg-200: #eaf1f1;
+        --wui-color-bg-225: #e5eded;
+        --wui-color-bg-250: #e1e9e9;
+        --wui-color-bg-275: #dce7e7;
+        --wui-color-bg-300: #d8e3e3;
+        --wui-color-bg-325: #f3f3f3;
+        --wui-color-bg-350: #202020;
+
+        --wui-color-success-base-100: #26b562;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f05142;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 181, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 181, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 181, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 181, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 181, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 181, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 181, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 181, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 181, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 181, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(240, 81, 66, 0.01);
+        --wui-color-error-glass-002: rgba(240, 81, 66, 0.02);
+        --wui-color-error-glass-005: rgba(240, 81, 66, 0.05);
+        --wui-color-error-glass-010: rgba(240, 81, 66, 0.1);
+        --wui-color-error-glass-015: rgba(240, 81, 66, 0.15);
+        --wui-color-error-glass-020: rgba(240, 81, 66, 0.2);
+        --wui-color-error-glass-025: rgba(240, 81, 66, 0.25);
+        --wui-color-error-glass-030: rgba(240, 81, 66, 0.3);
+        --wui-color-error-glass-060: rgba(240, 81, 66, 0.6);
+        --wui-color-error-glass-080: rgba(240, 81, 66, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-icon-box-bg-error-base-100: #f4dfdd;
+        --wui-icon-box-bg-blue-base-100: #d9ecfb;
+        --wui-icon-box-bg-success-base-100: #daf0e4;
+        --wui-icon-box-bg-inverse-base-100: #dcecfc;
+
+        --wui-all-wallets-bg-100: #e8f1fa;
+
+        --wui-avatar-border-base: #f3f4f4;
+
+        --wui-thumbnail-border-base: #eaefef;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --wui-color-gray-glass-001: rgba(0, 0, 0, 0.01);
+        --wui-color-gray-glass-002: rgba(0, 0, 0, 0.02);
+        --wui-color-gray-glass-005: rgba(0, 0, 0, 0.05);
+        --wui-color-gray-glass-010: rgba(0, 0, 0, 0.1);
+        --wui-color-gray-glass-015: rgba(0, 0, 0, 0.15);
+        --wui-color-gray-glass-020: rgba(0, 0, 0, 0.2);
+        --wui-color-gray-glass-025: rgba(0, 0, 0, 0.25);
+        --wui-color-gray-glass-030: rgba(0, 0, 0, 0.3);
+        --wui-color-gray-glass-060: rgba(0, 0, 0, 0.6);
+        --wui-color-gray-glass-080: rgba(0, 0, 0, 0.8);
+        --wui-color-gray-glass-090: rgba(0, 0, 0, 0.9);
+
+        --wui-color-dark-glass-100: rgba(233, 233, 233, 1);
+
+        --w3m-card-embedded-shadow-color: rgb(224 225 233 / 25%);
+      }
+    </style><style>
+      :root {
+        --w3m-color-mix: #fff;
+        --w3m-accent: hsla(230, 100%, 67%, 1);
+        --w3m-default: #fff;
+
+        --wui-color-modal-bg-base: #121313;
+        --wui-color-accent-base-100: var(--w3m-accent);
+
+        --wui-color-blueberry-100: hsla(230, 100%, 67%, 1);
+        --wui-color-blueberry-090: hsla(231, 76%, 61%, 1);
+        --wui-color-blueberry-080: hsla(230, 59%, 55%, 1);
+        --wui-color-blueberry-050: hsla(231, 100%, 70%, 0.1);
+
+        --wui-color-fg-100: #e4e7e7;
+        --wui-color-fg-125: #d0d5d5;
+        --wui-color-fg-150: #a8b1b1;
+        --wui-color-fg-175: #a8b0b0;
+        --wui-color-fg-200: #949e9e;
+        --wui-color-fg-225: #868f8f;
+        --wui-color-fg-250: #788080;
+        --wui-color-fg-275: #788181;
+        --wui-color-fg-300: #6e7777;
+        --wui-color-fg-325: #9a9a9a;
+        --wui-color-fg-350: #363636;
+
+        --wui-color-bg-100: #141414;
+        --wui-color-bg-125: #191a1a;
+        --wui-color-bg-150: #1e1f1f;
+        --wui-color-bg-175: #222525;
+        --wui-color-bg-200: #272a2a;
+        --wui-color-bg-225: #2c3030;
+        --wui-color-bg-250: #313535;
+        --wui-color-bg-275: #363b3b;
+        --wui-color-bg-300: #3b4040;
+        --wui-color-bg-325: #252525;
+        --wui-color-bg-350: #ffffff;
+
+        --wui-color-success-base-100: #26d962;
+        --wui-color-success-base-125: #30a46b;
+
+        --wui-color-warning-base-100: #f3a13f;
+
+        --wui-color-error-base-100: #f25a67;
+        --wui-color-error-base-125: #df4a34;
+
+        --wui-color-blue-base-100: rgba(102, 125, 255, 1);
+        --wui-color-blue-base-90: rgba(102, 125, 255, 0.9);
+
+        --wui-color-success-glass-001: rgba(38, 217, 98, 0.01);
+        --wui-color-success-glass-002: rgba(38, 217, 98, 0.02);
+        --wui-color-success-glass-005: rgba(38, 217, 98, 0.05);
+        --wui-color-success-glass-010: rgba(38, 217, 98, 0.1);
+        --wui-color-success-glass-015: rgba(38, 217, 98, 0.15);
+        --wui-color-success-glass-020: rgba(38, 217, 98, 0.2);
+        --wui-color-success-glass-025: rgba(38, 217, 98, 0.25);
+        --wui-color-success-glass-030: rgba(38, 217, 98, 0.3);
+        --wui-color-success-glass-060: rgba(38, 217, 98, 0.6);
+        --wui-color-success-glass-080: rgba(38, 217, 98, 0.8);
+
+        --wui-color-success-glass-reown-020: rgba(48, 164, 107, 0.2);
+
+        --wui-color-warning-glass-reown-020: rgba(243, 161, 63, 0.2);
+
+        --wui-color-error-glass-001: rgba(242, 90, 103, 0.01);
+        --wui-color-error-glass-002: rgba(242, 90, 103, 0.02);
+        --wui-color-error-glass-005: rgba(242, 90, 103, 0.05);
+        --wui-color-error-glass-010: rgba(242, 90, 103, 0.1);
+        --wui-color-error-glass-015: rgba(242, 90, 103, 0.15);
+        --wui-color-error-glass-020: rgba(242, 90, 103, 0.2);
+        --wui-color-error-glass-025: rgba(242, 90, 103, 0.25);
+        --wui-color-error-glass-030: rgba(242, 90, 103, 0.3);
+        --wui-color-error-glass-060: rgba(242, 90, 103, 0.6);
+        --wui-color-error-glass-080: rgba(242, 90, 103, 0.8);
+
+        --wui-color-error-glass-reown-020: rgba(223, 74, 52, 0.2);
+
+        --wui-color-gray-glass-001: rgba(255, 255, 255, 0.01);
+        --wui-color-gray-glass-002: rgba(255, 255, 255, 0.02);
+        --wui-color-gray-glass-005: rgba(255, 255, 255, 0.05);
+        --wui-color-gray-glass-010: rgba(255, 255, 255, 0.1);
+        --wui-color-gray-glass-015: rgba(255, 255, 255, 0.15);
+        --wui-color-gray-glass-020: rgba(255, 255, 255, 0.2);
+        --wui-color-gray-glass-025: rgba(255, 255, 255, 0.25);
+        --wui-color-gray-glass-030: rgba(255, 255, 255, 0.3);
+        --wui-color-gray-glass-060: rgba(255, 255, 255, 0.6);
+        --wui-color-gray-glass-080: rgba(255, 255, 255, 0.8);
+        --wui-color-gray-glass-090: rgba(255, 255, 255, 0.9);
+
+        --wui-color-dark-glass-100: rgba(42, 42, 42, 1);
+
+        --wui-icon-box-bg-error-base-100: #3c2426;
+        --wui-icon-box-bg-blue-base-100: #20303f;
+        --wui-icon-box-bg-success-base-100: #1f3a28;
+        --wui-icon-box-bg-inverse-base-100: #243240;
+
+        --wui-all-wallets-bg-100: #222b35;
+
+        --wui-avatar-border-base: #252525;
+
+        --wui-thumbnail-border-base: #252525;
+
+        --wui-wallet-button-bg-base: var(--wui-color-bg-125);
+
+        --w3m-card-embedded-shadow-color: rgb(17 17 18 / 25%);
+      }
+    </style><div style="width: 1px; height: 1px; display: inline; position: absolute;"><img height="1" width="1" style="border-style:none;" alt="" src="sync.gif"><img height="1" width="1" style="border-style:none;" alt="" src="utsync.ashx.gif"><img height="1" width="1" style="border-style:none;" alt="" src="receive.png"><img height="1" width="1" style="border-style:none;" alt="" src="in.gif"><img height="1" width="1" style="border-style:none;" alt="" src="rum.gif"><img height="1" width="1" style="border-style:none;" alt="" src="sync-1.gif"><img height="1" width="1" style="border-style:none;" alt="" src="tap.php.gif"><img height="1" width="1" style="border-style:none;" alt="" src="sd.gif"><img height="1" width="1" style="border-style:none;" alt="" src="cookie-sync"><img height="1" width="1" style="border-style:none;" alt="" src="Pug.gif"><img height="1" width="1" style="border-style:none;" alt="" src="rtb-h"><img height="1" width="1" style="border-style:none;" alt="" src="xuid.gif"><img height="1" width="1" style="border-style:none;" alt="" src="setuid.gif"></div><div style="width: 1px; height: 1px; display: inline; position: absolute;"></div><img src="trigger.txt" width="1" height="1" border="0" alt=""><script data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement {}); } })(["vimeo-video","next-route-announcer","w3m-modal"])</script></head><body class="relative subpixel-antialiased min-h-screen gasoek_one_e87ae636-module__IgiKaq__variable fredoka_2a7bf93b-module__jv7msW__variable fredoka_2a7bf93b-module__jv7msW__className text-lg" style="overflow: unset;"><div hidden=""><!--$--><!--/$--></div><div class="fixed top-0 w-full h-[44px] flex items-center bg-black z-50 border-b-[2px] border-white text-white"><div class="rfm-marquee-container select-none transition-opacity duration-500 opacity-100" style="--pause-on-hover: paused; --pause-on-click: paused; --width: 100%; --transform: none;"><div class="rfm-marquee" style="--play: running; --direction: normal; --duration: 193.94515625s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div class="rfm-initial-child-container"><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-0.svg" style="color: transparent;"><span class="">[***SNQj] Wallet Bought</span><span class="text-primary">364,367</span><span class="">$BPENGU <time datetime="2025-08-05T02:00:46.945Z" title="Monday, August 4, 2025 at 7:00:46 PM">4 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-1.svg" style="color: transparent;"><span class="text-primary">[***3QW1] Wallet Bought</span><span class="">47,178</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T02:00:16.859Z" title="Monday, August 4, 2025 at 7:00:16 PM">5 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-2.svg" style="color: transparent;"><span class="">[***9HWF] Wallet Bought</span><span class="text-primary">48,287</span><span class="">$BPENGU <time datetime="2025-08-05T01:54:46.233Z" title="Monday, August 4, 2025 at 6:54:46 PM">10 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-3.svg" style="color: transparent;"><span class="text-primary">[***263D] Wallet Bought</span><span class="">213,603</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:54:23.710Z" title="Monday, August 4, 2025 at 6:54:23 PM">11 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-4.svg" style="color: transparent;"><span class="">[***YCGu] Wallet Bought</span><span class="text-primary">79,931</span><span class="">$BPENGU <time datetime="2025-08-05T01:50:46.516Z" title="Monday, August 4, 2025 at 6:50:46 PM">14 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-0.svg" style="color: transparent;"><span class="text-primary">[***Xpc4] Wallet Bought</span><span class="">24,629</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:45:46.235Z" title="Monday, August 4, 2025 at 6:45:46 PM">19 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-1.svg" style="color: transparent;"><span class="">[***4B4A] Wallet Bought</span><span class="text-primary">201,314</span><span class="">$BPENGU <time datetime="2025-08-05T01:40:46.811Z" title="Monday, August 4, 2025 at 6:40:46 PM">24 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-2.svg" style="color: transparent;"><span class="text-primary">[***ELuH] Wallet Bought</span><span class="">111,638</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:35:46.514Z" title="Monday, August 4, 2025 at 6:35:46 PM">29 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-3.svg" style="color: transparent;"><span class="">[***aSUA] Wallet Bought</span><span class="text-primary">176,738</span><span class="">$BPENGU <time datetime="2025-08-05T01:31:16.375Z" title="Monday, August 4, 2025 at 6:31:16 PM">34 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-4.svg" style="color: transparent;"><span class="text-primary">[***ktxX] Wallet Bought</span><span class="">336,032</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:27:45.561Z" title="Monday, August 4, 2025 at 6:27:45 PM">37 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-0.svg" style="color: transparent;"><span class="">[***djkD] Wallet Bought</span><span class="text-primary">284,113</span><span class="">$BPENGU <time datetime="2025-08-05T01:26:15.947Z" title="Monday, August 4, 2025 at 6:26:15 PM">39 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-1.svg" style="color: transparent;"><span class="text-primary">[***d95c] Wallet Bought</span><span class="">3,190,722</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:25:21.744Z" title="Monday, August 4, 2025 at 6:25:21 PM">40 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-2.svg" style="color: transparent;"><span class="">[***oyD4] Wallet Bought</span><span class="text-primary">189,705</span><span class="">$BPENGU <time datetime="2025-08-05T01:21:45.519Z" title="Monday, August 4, 2025 at 6:21:45 PM">43 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-3.svg" style="color: transparent;"><span class="text-primary">[***Gg92] Wallet Bought</span><span class="">197,203</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:16:45.874Z" title="Monday, August 4, 2025 at 6:16:45 PM">48 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-4.svg" style="color: transparent;"><span class="">[***5Hqg] Wallet Bought</span><span class="text-primary">224,628</span><span class="">$BPENGU <time datetime="2025-08-05T01:12:15.522Z" title="Monday, August 4, 2025 at 6:12:15 PM">53 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-0.svg" style="color: transparent;"><span class="text-primary">[***FbjP] Wallet Bought</span><span class="">154,585</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:07:45.334Z" title="Monday, August 4, 2025 at 6:07:45 PM">57 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-1.svg" style="color: transparent;"><span class="">[***vMLE] Wallet Bought</span><span class="text-primary">81,501</span><span class="">$BPENGU <time datetime="2025-08-05T01:02:44.276Z" title="Monday, August 4, 2025 at 6:02:44 PM">1 hour ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-2.svg" style="color: transparent;"><span class="text-primary">[***UKhe] Wallet Bought</span><span class="">177,882</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T00:58:13.938Z" title="Monday, August 4, 2025 at 5:58:13 PM">1 hour ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-3.svg" style="color: transparent;"><span class="">[***q5UD] Wallet Bought</span><span class="text-primary">65,922</span><span class="">$BPENGU <time datetime="2025-08-05T00:54:14.477Z" title="Monday, August 4, 2025 at 5:54:14 PM">1 hour ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-4.svg" style="color: transparent;"><span class="text-primary">[***xzBf] Wallet Bought</span><span class="">200,617</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T00:49:44.352Z" title="Monday, August 4, 2025 at 5:49:44 PM">1 hour ago</time></span></div></div></div></div><div class="rfm-marquee" style="--play: running; --direction: normal; --duration: 193.94515625s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-0.svg" style="color: transparent;"><span class="">[***SNQj] Wallet Bought</span><span class="text-primary">364,367</span><span class="">$BPENGU <time datetime="2025-08-05T02:00:46.945Z" title="Monday, August 4, 2025 at 7:00:46 PM">4 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-1.svg" style="color: transparent;"><span class="text-primary">[***3QW1] Wallet Bought</span><span class="">47,178</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T02:00:16.859Z" title="Monday, August 4, 2025 at 7:00:16 PM">5 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-2.svg" style="color: transparent;"><span class="">[***9HWF] Wallet Bought</span><span class="text-primary">48,287</span><span class="">$BPENGU <time datetime="2025-08-05T01:54:46.233Z" title="Monday, August 4, 2025 at 6:54:46 PM">10 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-3.svg" style="color: transparent;"><span class="text-primary">[***263D] Wallet Bought</span><span class="">213,603</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:54:23.710Z" title="Monday, August 4, 2025 at 6:54:23 PM">11 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-4.svg" style="color: transparent;"><span class="">[***YCGu] Wallet Bought</span><span class="text-primary">79,931</span><span class="">$BPENGU <time datetime="2025-08-05T01:50:46.516Z" title="Monday, August 4, 2025 at 6:50:46 PM">14 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-0.svg" style="color: transparent;"><span class="text-primary">[***Xpc4] Wallet Bought</span><span class="">24,629</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:45:46.235Z" title="Monday, August 4, 2025 at 6:45:46 PM">19 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-1.svg" style="color: transparent;"><span class="">[***4B4A] Wallet Bought</span><span class="text-primary">201,314</span><span class="">$BPENGU <time datetime="2025-08-05T01:40:46.811Z" title="Monday, August 4, 2025 at 6:40:46 PM">24 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-2.svg" style="color: transparent;"><span class="text-primary">[***ELuH] Wallet Bought</span><span class="">111,638</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:35:46.514Z" title="Monday, August 4, 2025 at 6:35:46 PM">29 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-3.svg" style="color: transparent;"><span class="">[***aSUA] Wallet Bought</span><span class="text-primary">176,738</span><span class="">$BPENGU <time datetime="2025-08-05T01:31:16.375Z" title="Monday, August 4, 2025 at 6:31:16 PM">34 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-4.svg" style="color: transparent;"><span class="text-primary">[***ktxX] Wallet Bought</span><span class="">336,032</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:27:45.561Z" title="Monday, August 4, 2025 at 6:27:45 PM">37 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-0.svg" style="color: transparent;"><span class="">[***djkD] Wallet Bought</span><span class="text-primary">284,113</span><span class="">$BPENGU <time datetime="2025-08-05T01:26:15.947Z" title="Monday, August 4, 2025 at 6:26:15 PM">39 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-1.svg" style="color: transparent;"><span class="text-primary">[***d95c] Wallet Bought</span><span class="">3,190,722</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:25:21.744Z" title="Monday, August 4, 2025 at 6:25:21 PM">40 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-2.svg" style="color: transparent;"><span class="">[***oyD4] Wallet Bought</span><span class="text-primary">189,705</span><span class="">$BPENGU <time datetime="2025-08-05T01:21:45.519Z" title="Monday, August 4, 2025 at 6:21:45 PM">43 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-3.svg" style="color: transparent;"><span class="text-primary">[***Gg92] Wallet Bought</span><span class="">197,203</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:16:45.874Z" title="Monday, August 4, 2025 at 6:16:45 PM">48 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-4.svg" style="color: transparent;"><span class="">[***5Hqg] Wallet Bought</span><span class="text-primary">224,628</span><span class="">$BPENGU <time datetime="2025-08-05T01:12:15.522Z" title="Monday, August 4, 2025 at 6:12:15 PM">53 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-0.svg" style="color: transparent;"><span class="text-primary">[***FbjP] Wallet Bought</span><span class="">154,585</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T01:07:45.334Z" title="Monday, August 4, 2025 at 6:07:45 PM">57 minutes ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-1.svg" style="color: transparent;"><span class="">[***vMLE] Wallet Bought</span><span class="text-primary">81,501</span><span class="">$BPENGU <time datetime="2025-08-05T01:02:44.276Z" title="Monday, August 4, 2025 at 6:02:44 PM">1 hour ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-2.svg" style="color: transparent;"><span class="text-primary">[***UKhe] Wallet Bought</span><span class="">177,882</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T00:58:13.938Z" title="Monday, August 4, 2025 at 5:58:13 PM">1 hour ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-3.svg" style="color: transparent;"><span class="">[***q5UD] Wallet Bought</span><span class="text-primary">65,922</span><span class="">$BPENGU <time datetime="2025-08-05T00:54:14.477Z" title="Monday, August 4, 2025 at 5:54:14 PM">1 hour ago</time></span></div></div><div class="rfm-child" style="--transform: none;"><div class="flex items-center gap-1 font-semibold text-sm uppercase mx-5"><img alt="" loading="lazy" width="22" height="22" decoding="async" data-nimg="1" src="ticker-4.svg" style="color: transparent;"><span class="text-primary">[***xzBf] Wallet Bought</span><span class="">200,617</span><span class="text-primary">$BPENGU <time datetime="2025-08-05T00:49:44.352Z" title="Monday, August 4, 2025 at 5:49:44 PM">1 hour ago</time></span></div></div></div></div></div><header class="py-1 lg:py-0 lg:h-header fixed w-full top-ticker-height z-50"><div class="flex items-center justify-between gap-3 container h-full"><div class="flex-1"><a href=""><img alt="Bitcoin Penguins Logo" loading="lazy" width="100" height="77" decoding="async" data-nimg="1" class="w-[76px] min-w-[76px] max-w-[76px] lg:w-[100px] lg:min-w-[100px] lg:max-w-[100px]" style="color:transparent" srcset="penguin-trio-1.gif 1x, penguin-trio.gif 2x" src="penguin-trio.gif"></a></div><div class="mr-2 lg:hidden"><button type="button" class="group relative text-center font-bold cursor-pointer uppercase transition duration-100 border-2 border-black shadow-[5px_5px_0_0_#000] bg-primary text-black hover:brightness-[1.05] hover:translate-x-[1.5px] hover:translate-y-[1.5px] active:shadow-none active:translate-x-[5px] active:translate-y-[5px] flex gap-1 items-center text-xs sm:text-sm px-4 py-2 lg:px-6 lg:py-3">Connect Wallet</button></div><div class="-mr-2 lg:hidden"><div class="hamburger-react" aria-expanded="false" role="button" style="cursor:pointer;height:48px;position:relative;transition:0.4s cubic-bezier(0, 0, 0, 1);user-select:none;width:48px;outline:none" tabindex="0"><div style="transition:0.2s cubic-bezier(0, 0, 0, 1) 0.2s;transform:none"><div style="background:#fff;height:3px;left:8px;position:absolute;width:32px;top:13px;transition:0.2s cubic-bezier(0, 0, 0, 1) 0s;transform:none"></div></div><div style="transition:0.2s cubic-bezier(0, 0, 0, 1);opacity:1"><div style="background:#fff;height:3px;left:8px;position:absolute;width:32px;top:23px;transition:0.2s cubic-bezier(0, 0, 0, 1)"></div></div><div style="transition:0.2s cubic-bezier(0, 0, 0, 1) 0.2s;transform:none"><div style="background:#fff;height:3px;left:8px;position:absolute;width:32px;top:33px;transition:0.2s cubic-bezier(0, 0, 0, 1) 0s;transform:none"></div></div></div></div><nav class="text-white absolute left-0 w-full flex-col bg-black hidden lg:relative lg:top-0 lg:flex lg:items-center lg:bg-transparent lg:flex-row"><div class="flex flex-col gap-4 px-4 lg:flex-1 lg:gap-4 lg:px-2 lg:flex-row lg:items-center xl:gap-6"><a href="#competition" class="group relative w-fit px-1 uppercase font-semibold text-lg lg:text-sm lg:whitespace-nowrap hover:text-primary"></a><a href="#./" class="group relative w-fit px-1 uppercase font-semibold text-lg lg:text-sm lg:whitespace-nowrap hover:text-primary"></a><a href="#tokenomics" class="group relative w-fit px-1 uppercase font-semibold text-lg lg:text-sm lg:whitespace-nowrap hover:text-primary"></a><a href="#roadmap" class="group relative w-fit px-1 uppercase font-semibold text-lg lg:text-sm lg:whitespace-nowrap hover:text-primary"></a><a href="#staking" class="group relative w-fit px-1 uppercase font-semibold text-lg lg:text-sm lg:whitespace-nowrap hover:text-primary"></a><a class="group relative w-fit px-1 uppercase font-semibold text-lg lg:text-sm lg:whitespace-nowrap hover:text-primary" target="_blank" rel="noopener noreferrer" href="https://bitcoinpenguins.io/whitepaper.pdf"></a></div><div class="flex flex-col px-4 mt-4 py-4 z-10 lg:z-0 lg:items-center lg:flex-row lg:px-0 lg:gap-2 lg:mt-0 xl:gap-3"><div class="flex items-center gap-4 mb-4 lg:mb-0"><a href="https://x.com/BitcoinPenguins" target="_blank" rel="noopener noreferrer" class="bg-black text-white min-w-[36px] aspect-square flex items-center justify-center rounded-full hover:text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a href="https://t.me/BitcoinPenguinsOfficial" target="_blank" rel="noopener noreferrer" class="bg-black text-white min-w-[36px] aspect-square flex items-center justify-center rounded-full hover:text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg></a></div><div class="relative border-t border-white pt-6 mx-1 lg:border-0 lg:pt-0 lg:mx-0"><button type="button" class="font-semibold flex items-center justify-between w-full text-white text-lg uppercase cursor-pointer lg:px-4 lg:py-2 lg:hover:text-primary lg:text-sm"><span class="lg:hidden">English</span><span class="hidden lg:block">en</span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="lg:ml-2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg></button><div class="flex-col max-h-[200px] lg:max-h-none overflow-y-auto bg-white text-black text-sm absolute top-[-220px] lg:top-full right-0 hidden"><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light bg-grey-light" href=""><div class="flex items-center gap-3"><img width="16" height="12" src="cfd76208e84b00ed2e6f215cd1773aaa37c130ff.svg">English</div><span class="text-[#52C33F] ml-3"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"></path></svg></span></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/zh"><div class="flex items-center gap-3"><img width="16" height="12" src="4cf685ef2060248b12d5a62ace1a6b8c2a353842.svg">中文</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/de"><div class="flex items-center gap-3"><img width="16" height="12" src="419a29faa545bc9f22d4766bdbe89c379cbe2fb6.svg">Deutsch</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/nl"><div class="flex items-center gap-3"><img width="16" height="12" src="2bd8e8bed811624e1379fd80797333dc447c579f.svg">Nederlands</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/ja"><div class="flex items-center gap-3"><img width="16" height="12" src="7542d22b170c572be8f10b18c0d5bdc53550163e.svg">日本語</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/ko"><div class="flex items-center gap-3"><img width="16" height="12" src="f65b07b592db6d4f98cdcaf5fd11faeec77d1196.svg">한국어</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/fr"><div class="flex items-center gap-3"><img width="16" height="12" src="6b67faf7d4d05e6a83b4194dffda997adefb35d1.svg">Français</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/es"><div class="flex items-center gap-3"><img width="16" height="12" src="b9677c3b9f8a5915d2badb88f20a578dc34e600f.svg">Español</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/it"><div class="flex items-center gap-3"><img width="16" height="12" src="d7cb985a2b07d8d0a2a2e818795628fea4f0c562.svg">Italiano</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/pl"><div class="flex items-center gap-3"><img width="16" height="12" src="4732cbccfdfda177a771e6fc499ace64a5c37dc9.svg">Polski</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/ro"><div class="flex items-center gap-3"><img width="16" height="12" src="cd69bf839d220b226f22c942b0ef7503f00cbdfe.svg">Română</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/vn"><div class="flex items-center gap-3"><img width="16" height="12" src="efd3a4e2cf32433910f72055320a0d9dc5e08f82.svg">Tiếng Việt</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/sk"><div class="flex items-center gap-3"><img width="16" height="12" src="86d810798b6c18c267f5c2811a51378f4d310ee5.svg">Slovenčina</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/pt"><div class="flex items-center gap-3"><img width="16" height="12" src="6cfea4d4c14f3f8b3608a0cd0e974c1b46148b15.svg">Português</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="https://bitcoinpenguins.io/tr"><div class="flex items-center gap-3"><img width="16" height="12" src="fe7ccbfb08b88221575b2275485cf5a9b21b36c5.svg">Türkçe</div></a><a class="flex items-center justify-between gap-3 px-3 py-2 hover:bg-grey-light" href="./wallet/index.html"><div class="flex items-center gap-3"><img width="16" height="12" src="c1f35b444ea344d5586a5c16f84ad78411cbdaec.svg">ไทย</div></a></div></div><a href="./wallet/index.html"><button type="button" class="group relative text-center font-bold cursor-pointer uppercase transition duration-100 border-2 border-black shadow-[5px_5px_0_0_#000] bg-primary text-black hover:brightness-[1.05] hover:translate-x-[1.5px] hover:translate-y-[1.5px] active:shadow-none active:translate-x-[5px] active:translate-y-[5px] gap-1 items-center text-xs sm:text-sm px-4 py-2 lg:px-6 lg:py-3 hidden lg:flex">Connect Wallet</button></a></div></nav></div></header><main><main><section style="background-image: url(&quot;bg-snow-mountains.jpg&quot;);" class="bg-cover relative bg-bottom lg:min-h-[1000px] overflow-hidden pb-4 lg:pb-6 xl:pb-8 border-b-[3px] border-black pt-header 2xl:pt-total-header"><div class="absolute top-0 left-0 right-0 h-[300px] bg-linear-to-b from-[#117eba] to-transparent"></div><div id="dapp" class="container mt-2 lg:mt-9"><h1 class="font-heading uppercase text-shadow-[3px_3px_0px_#000] lg:text-shadow-[6px_6px_0px_#000] with-text-stroke text-xl/[1] xs:text-[34px]/[1] lg:text-giant relative z-[1] text-center mx-auto lg:mx-0 lg:text-left max-w-[600px] mb-4 lg:mb-5"><span class="text-primary">Bitcoin</span> <span class="text-white">Penguins</span></h1><div class="flex flex-col lg:flex-row flex-wrap gap-4 lg:flex-nowrap lg:gap-8"><div class="flex-1"><div class="relative max-w-[815px] mx-auto lg:mx-0"><div class="absolute left-[-340px] top-0 w-[1332px] h-[400px] rounded-[1332px]" style="background:radial-gradient(50% 50% at 50% 50%, #CFEFFF 25%, rgba(207, 239, 255, 0) 100%)"></div><div class="relative z-[1] text-center lg:text-left"><p class="text-lg font-semibold">Token Claim Is Now LIVE — Secure Your Share of the Future!.</p><div class="text-lg lg:mb-6"><p>We're thrilled to announce that BPENGU claiming is officially OPEN!
+This is more than just a milestone — it's your moment to claim your rewards and take part in the next chapter of our journey. Your participation, support, and activity have brought us here, and now it's time to reap the benefits. Every action you've taken — from community engagement to ecosystem contributions — has earned you points, and now those points convert into real value.</p><p>Penguins don’t sell. Penguins don’t FUD. Penguins just HODL.</p></div></div></div></div><div class="order-first lg:order-last w-full max-w-[500px] mx-auto lg:mx-0 lg:mt-[-200px] 2xl:mt-[-240px]"><div class="relative z-[1]"><div class="w-fit mx-auto bg-white font-semibold text-xs lg:text-base uppercase border-x-[3px] border-t-[3px] border-black"><div class="flex items-center gap-2 lg:gap-4 px-2 lg:px-4 py-2"><span>Buy With</span><img alt="" loading="lazy" width="145" height="22" decoding="async" data-nimg="1" class="w-auto h-[17px] lg:h-auto" style="color:transparent" src="buy-with-coins.svg"></div></div><div class="flex flex-col border-[3px] border-black bg-white shadow-[5px_5px_0_0_#000]"><div class="bg-black text-white uppercase text-center p-2 text-lg lg:text-[24px]/[1]"><div class="font-bold mb-1">CLAIM<span class="text-primary"> HERE</span></div><div class="text-[11px] sm:text-sm font-semibold"></div></div><div class="flex flex-col h-full justify-between"><div class=""><div class="flex flex-col justify-center h-full bg-primary text-center px-1 py-1 lg:pb-2 border-b-[3px] border-black"><div class="flex gap-1 items-center justify-center text-sm uppercase font-bold -mb-2 lg:mb-[-2px]"><svg width="25" height="24" viewBox="" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><pattern id="pattern0_8129_2287" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0_8129_2287" transform="scale(0.00973913 0.01)"></use></pattern><image id="image0_8129_2287" width="100" height="100" preserveAspectRatio="none" xlink:href="0d10937ee2e6da4220236d1b53f0b53a2e6881fd.png"></image></defs></svg></div><div class="flex justify-center w-full min-w-[3/4] max-w-3/4 mx-auto"><div class="flex flex-col items-center justify-center text-center min-w-[60px] w-[60px] lg:w-[100px]"><div class="text-sm/[1] font-bold uppercase"></div></div></div></div><div class="relative bg-sky font-bold text-[32px] lg:text-2xl uppercase flex items-center justify-center gap-2 px-2 lg:px-4 min-h-[54px] lg:min-h-[63px] border-b-[3px] border-black"><span>$881,520</span><span class="text-base lg:text-lg font-semibold">Allocated</span></div><div class="px-2 py-1 lg:px-3 lg:py-2 pb-[65px] lg:pb-[65px]"><div class="flex items-center justify-between uppercase text-sm font-semibold"><div>Current Price<!-- --> <span>$<!-- -->0.00116</span></div><div class="hidden xs:block flex-1 h-[2px] bg-black w-full mx-1 lg:mx-8"></div><div class="flex items-center gap-1 lg:gap-2">Next Price<span>$<!-- -->0.00122</span></div></div></div><div class="bg-black p-2 lg:p-3"><h2 id="radix-_R_6al8anmtivbH1_" class="sr-only">Your Purchase Has Been Successful!</h2><form><div class="bg-white border-[3px] border-black p-2 py-[7px] lg:pt-2 lg:px-4 lg:pb-3 space-y-[7px] lg:space-y-4 mb-1 lg:mb-2 mt-[-70px]"><div class="w-full flex items-center justify-between gap-2 lg:gap-4 border-b-[2px] border-black"><div class="flex-1 min-w-0"><div class="text-xs/[1] lg:text-sm font-[500] -mb-[2px] lg:mb-1">Value</div><div class="flex items-center justify-between bg-transparent p-0 h-[39px] gap-2 overflow-hidden"><input type="tel" required="" class="font-semibold text-[30px] lg:text-[36px] active:outline-none focus:outline-none" inputmode="decimal" value="0"></div><div class="font-[500] text-xs mb-1 lg:mb-3 lg:mt-1">$0</div></div><div class="flex-shrink-0 -mt-2"><button type="button" class="group flex items-center justify-center font-bold text-[15px] bg-black text-white px-2 lg:px-3 h-[36px] lg:h-[44px] gap-3 cursor-pointer hover:bg-brightness-110 hover:text-primary"><img alt="Solana Token" loading="lazy" width="24" height="24" decoding="async" data-nimg="1" class="block" style="color:transparent" src="solana.svg">SOL<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="text-lg" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></button></div></div><div class="w-full flex items-center justify-between gap-2 lg:gap-4"><div class="flex-1 min-w-0"><div class="text-xs/[1] lg:text-sm font-[500] -mb-[2px] lg:mb-1">You Receive</div><div class="flex items-center justify-between bg-transparent p-0 h-[39px] gap-2 overflow-hidden"><input type="tel" required="" class="font-semibold text-[30px] lg:text-[36px] active:outline-none focus:outline-none" value="0"></div></div><div class="flex-shrink-0"><div class="flex gap-2 items-center font-semibold border-2 text-[15px] border-black px-2 lg:px-3 h-[36px] lg:h-[44px] select-none"><img alt="BPENGU" loading="lazy" width="26" height="26" decoding="async" data-nimg="1" class="size-[26px] aspect-square" style="color:transparent" src="bpengu.svg"><span>BPENGU</span></div></div></div></div><a href="./wallet/index.html"><button type="button" class="relative z-[2] border-[3px] border-black cursor-pointer bg-[#FFF600] text-black font-bold text-[24px] lg:text-xl uppercase w-full p-2 lg:px-3 hover:brightness-110 disabled:cursor-not-allowed">Claim Token</button></a></form></div></div><div class="relative bg-sky pt-8 mt-[-43px] lg:mt-[-53px] z-[1]"><div class="flex items-center justify-center gap-4 pb-3"><div class="text-xs lg:text-base">Audit by<!-- --> </div><a href="https://spywolf.co/audits/BPENGU_9L2d5gHyo9HhmPzZ9YgErJu2bd1RwSCoxEqeb4DrJHdL.pdf" target="_blank" rel="noopener noreferrer"><img alt="" loading="lazy" width="84" height="20" decoding="async" data-nimg="1" class="w-[84px]" style="color:transparent" src="spywolf.svg"></a></div></div></div></div></div></div></div><div class="hidden relative lg:flex max-w-[800px]"><img alt="Mr. Monacle" loading="lazy" width="342" height="342" decoding="async" data-nimg="1" class="size-[342px] absolute bottom-[-30px] right-[20px] 2xl:right-[-180px] lg:bottom-[-50px]" style="color:transparent" src="mr-monacle.gif"><img alt="Mr. Bling" loading="lazy" width="342" height="359" decoding="async" data-nimg="1" class="w-[342px] h-[359px] absolute bottom-[-20px] right-[160px] 2xl:right-[-40px] lg:bottom-[-60px]" style="color:transparent" src="mr-bling.gif"><img alt="Mr. Green" loading="lazy" width="345" height="345" decoding="async" data-nimg="1" class="size-[345px] absolute bottom-[-40px] right-[310px] 2xl:right-[110px] lg:bottom-[-80px]" style="color:transparent" src="mr-green.gif"><img alt="Mr. Pink" loading="lazy" width="316" height="316" decoding="async" data-nimg="1" class="size-[316px] absolute bottom-[-40px] right-[450px] 2xl:right-[250px] lg:bottom-[-80px]" style="color:transparent" src="mr-pink.gif"></div></div></section><section id="about" class="relative bg-sand scroll-mt-header border-b-[3px] border-black"><div class="overflow-hidden relative py-4 lg:py-6 xl:py-10"><div class="container"><div class="grid gap-4 lg:grid-cols-2"><div class="max-w-[630px] xl:ml-10 mx-auto lg:mx-0"><h2 class="font-heading uppercase text-shadow-[6px_6px_0px_#000] with-text-stroke text-3xl/[0.88] lg:text-5xl text-white text-center lg:text-left mb-4">Our Colony</h2><p class="text-lg font-semibold text-center lg:text-left">Meet the friendliest birds on the blockchain: these cute birds have been stacking sats since 2013, waddling through the coldest markets without a single FUD quiver.</p><p class="text-lg text-center lg:text-left">Now they’re surfacing en masse—cute as ever, but armed with unstoppable buy pressure. Join the waddle, fight the ice‑age of fiat, and let these penguins prove that kindness (and rock‑solid tokenomics) can conquer any winter.</p><a href="./wallet/index.html"><button type="button" class="group relative text-center font-bold cursor-pointer uppercase transition duration-100 border-2 border-black shadow-[5px_5px_0_0_#000] bg-primary text-black hover:brightness-[1.05] hover:translate-x-[1.5px] hover:translate-y-[1.5px] active:shadow-none active:translate-x-[5px] active:translate-y-[5px] px-6 py-3 text-sm block w-fit mx-auto lg:ml-0 lg:mt-6">Buy Now</button></a></div><div class="max-w-[735px] mx-auto lg:mx-0"><div class="border-[3px] border-black w-full h-full relative"><vimeo-video src="https://vimeo.com/1106119015?fl=pl&amp;fe=sh" playsinline="" style="display: block; width: 100%; height: 100%; position: absolute; top: 0px; left: 0px;" data-scrapbook-shadowdom="
+    <style>
+      :host {
+        display: inline-block;
+        min-width: 300px;
+        min-height: 150px;
+        position: relative;
+      }
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      :host(:not([controls])) {
+        pointer-events: none;
+      }
+    </style>
+    <iframe src=&quot;index_3.html&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;100%&quot; allow=&quot;accelerometer; fullscreen; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; data-ready=&quot;true&quot;></iframe>
+  "></vimeo-video><img alt="Video Preview" loading="lazy" width="672" height="373" decoding="async" data-nimg="1" class="w-full h-full object-cover z-[1] relative cursor-pointer" style="color:transparent" srcset="video-preview.png 1x, video-preview-1.png 2x" src="video-preview-1.png"></div></div></div></div></div></section><section id="press" class="relative bg-egg-shell scroll-mt-total-header border-b-[3px] border-black"><div class="overflow-hidden relative"><div class="py-4 lg:py-6 xl:py-10"><div class="container"><div class="pb-[300px] lg:pb-0 grid gap-4 lg:grid-cols-3 lg:gap-16 lg:mb-8 xl:gap-40"><div class="lg:order-1"><h1 class="font-heading uppercase text-shadow-[3px_3px_0px_#000] lg:text-shadow-[6px_6px_0px_#000] with-text-stroke text-xl/[1] xs:text-[34px]/[1] lg:text-giant text-white text-center">Press</h1></div><div class="keen-slider lg:hidden opacity-100 transition-opacity duration-300" data-keen-slider-disabled=""><div class="keen-slider__slide flex flex-col items-center max-w-[372px]"><a href="https://www.btc-echo.de/news/bitcoin-penguins-geht-viral-wird-das-der-nachste-pengu-oder-sogar-mehr-sponsored-212478/" target="_blank" rel="noopener noreferrer nofollow" class="flex flex-col items-center mt-3 mb-6"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->Bitcoin Penguins geht viral<!-- -->”</div><img alt="" loading="lazy" width="217" height="44" decoding="async" data-nimg="1" style="color:transparent" srcset="btcecho-1.png 1x, btcecho.png 2x" src="btcecho.png"></a></div><div class="keen-slider__slide flex flex-col items-center max-w-[372px]"><a href="https://coincodex.com/article/70767/the-next-pudgy-penguins-launches-12m-in-24hrs-for-bitcoin-penguins/" target="_blank" rel="noopener noreferrer nofollow" class="flex flex-col items-center mt-3 mb-6"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->The Next Pudgy Penguins Launches<!-- -->”</div><img alt="" loading="lazy" width="220" height="42" decoding="async" data-nimg="1" style="color:transparent" srcset="coincodex-1.png 1x, coincodex.png 2x" src="coincodex.png"></a></div><div class="keen-slider__slide flex flex-col items-center max-w-[372px]"><a href="https://partner.cryptopolitan.com/is-this-the-next-pengu-1-2m-in-24-hours-suggests-it-might-be/" target="_blank" rel="noopener noreferrer nofollow" class="flex flex-col items-center mt-3 mb-6"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->Is This the Next PENGU?<!-- -->”</div><img alt="" loading="lazy" width="200" height="45" decoding="async" data-nimg="1" style="color:transparent" src="cryptopolitan.svg"></a></div><div class="keen-slider__slide flex flex-col items-center max-w-[372px]"><a href="https://www.blockmedia.co.kr/archives/952866" target="_blank" rel="noopener noreferrer nofollow" class="flex flex-col items-center mt-3 mb-6"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->펏지펭귄' 뒤 이을까<!-- -->”</div><img alt="" loading="lazy" width="212" height="53" decoding="async" data-nimg="1" style="color:transparent" srcset="blockmedia.png 1x, blockmedia-1.png 2x" src="blockmedia-1.png"></a></div><div class="keen-slider__slide flex flex-col items-center max-w-[372px]"><a href="https://coinreaders.com/176659" target="_blank" rel="noopener noreferrer nofollow" class="flex flex-col items-center mt-3 mb-6"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->비트코인 펭귄, 조기 열풍 속 130만 달러 모금<!-- -->”</div><img alt="" loading="lazy" width="214" height="38" decoding="async" data-nimg="1" style="color:transparent" srcset="coinreaders-1.png 1x, coinreaders.png 2x" src="coinreaders.png"></a></div><div class="keen-slider__slide flex flex-col items-center max-w-[372px]"><a href="https://www.blockchaintoday.co.kr/news/articleView.html?idxno=54103" target="_blank" rel="noopener noreferrer nofollow" class="flex flex-col items-center mt-3 mb-6"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->제 2의 펭구, 혹은 그 이상?<!-- -->”</div><img alt="" loading="lazy" width="210" height="47" decoding="async" data-nimg="1" style="color:transparent" srcset="blockchain-today-1.png 1x, blockchain-today.png 2x" src="blockchain-today.png"></a></div><div class="keen-slider__slide flex flex-col items-center max-w-[372px]"><a href="https://coinpedia.org/press-release/bitcoin-penguins-are-taking-over-is-this-the-next-meme-coin-craze/" target="_blank" rel="noopener noreferrer nofollow" class="flex flex-col items-center mt-3 mb-6"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->Is This the Next Meme Coin Craze?<!-- -->”</div><img alt="" loading="lazy" width="180" height="29" decoding="async" data-nimg="1" style="color:transparent" srcset="coinpedia-1.png 1x, coinpedia.png 2x" src="coinpedia.png"></a></div><div class="keen-slider__slide flex flex-col items-center max-w-[372px]"><a href="https://www.coinkurier.de/bitcoin-penguins-startet-durch-der-naechste-hype-nach-pudgy-penguins-1-2-mio-in-nur-24-stunden-eingesammelt" target="_blank" rel="noopener noreferrer nofollow" class="flex flex-col items-center mt-3 mb-6"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->Der nächste Hype nach Pudgy Penguins?<!-- -->”</div><img alt="" loading="lazy" width="185" height="42" decoding="async" data-nimg="1" style="color:transparent" srcset="coin-kurier.png 1x, coin-kurier-1.png 2x" src="coin-kurier-1.png"></a></div></div><a href="https://coincodex.com/article/70767/the-next-pudgy-penguins-launches-12m-in-24hrs-for-bitcoin-penguins/" target="_blank" rel="noopener noreferrer nofollow" class="flex-col items-center my-6 lg:order-0 hidden lg:flex"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->The Next Pudgy Penguins Launches<!-- -->”</div><img alt="" loading="lazy" width="220" height="42" decoding="async" data-nimg="1" style="color:transparent" srcset="coincodex-1.png 1x, coincodex.png 2x" src="coincodex.png"></a><a href="https://partner.cryptopolitan.com/is-this-the-next-pengu-1-2m-in-24-hours-suggests-it-might-be/" target="_blank" rel="noopener noreferrer nofollow" class="flex-col items-center my-6 lg:order-2 hidden lg:flex"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->Is This the Next PENGU?<!-- -->”</div><img alt="" loading="lazy" width="200" height="45" decoding="async" data-nimg="1" style="color:transparent" src="cryptopolitan.svg"></a></div><div class="grid gap-4 lg:grid-cols-3 lg:gap-16 lg:mb-8 xl:gap-40"><a href="https://www.blockmedia.co.kr/archives/952866" target="_blank" rel="noopener noreferrer nofollow" class="flex-col items-center my-6 hidden lg:flex"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->펏지펭귄' 뒤 이을까<!-- -->”</div><img alt="" loading="lazy" width="212" height="53" decoding="async" data-nimg="1" style="color:transparent" srcset="blockmedia.png 1x, blockmedia-1.png 2x" src="blockmedia-1.png"></a><a href="https://www.btc-echo.de/news/bitcoin-penguins-geht-viral-wird-das-der-nachste-pengu-oder-sogar-mehr-sponsored-212478/" target="_blank" rel="noopener noreferrer nofollow" class="flex-col items-center my-6 lg:mt-[-50px] hidden lg:flex"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->Bitcoin Penguins geht viral<!-- -->”</div><img alt="" loading="lazy" width="217" height="44" decoding="async" data-nimg="1" style="color:transparent" srcset="btcecho-1.png 1x, btcecho.png 2x" src="btcecho.png"></a><a href="https://coinreaders.com/176659" target="_blank" rel="noopener noreferrer nofollow" class="flex-col items-center my-6 hidden lg:flex"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->비트코인 펭귄, 조기 열풍 속 130만 달러 모금<!-- -->”</div><img alt="" loading="lazy" width="214" height="38" decoding="async" data-nimg="1" style="color:transparent" srcset="coinreaders-1.png 1x, coinreaders.png 2x" src="coinreaders.png"></a></div><div class="grid gap-4 lg:grid-cols-3 lg:gap-16 lg:mb-8 xl:gap-40"><a href="https://www.blockchaintoday.co.kr/news/articleView.html?idxno=54103" target="_blank" rel="noopener noreferrer nofollow" class="flex-col items-center my-6 hidden lg:flex"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->제 2의 펭구, 혹은 그 이상?<!-- -->”</div><img alt="" loading="lazy" width="210" height="47" decoding="async" data-nimg="1" style="color:transparent" srcset="blockchain-today-1.png 1x, blockchain-today.png 2x" src="blockchain-today.png"></a><div class="hidden lg:block"></div><a href="https://coinpedia.org/press-release/bitcoin-penguins-are-taking-over-is-this-the-next-meme-coin-craze/" target="_blank" rel="noopener noreferrer nofollow" class="flex-col items-center my-6 mb-[360px] lg:mb-0 hidden lg:flex"><div class="uppercase font-semibold text-xl text-center mb-4">“<!-- -->Is This the Next Meme Coin Craze?<!-- -->”</div><img alt="" loading="lazy" width="180" height="29" decoding="async" data-nimg="1" style="color:transparent" srcset="coinpedia-1.png 1x, coinpedia.png 2x" src="coinpedia.png"></a></div></div></div><img alt="" loading="lazy" width="461" height="416" decoding="async" data-nimg="1" class="absolute bottom-[-50px] left-1/2 -translate-x-1/2 z-[1]" style="color:transparent" srcset="mr-monacle-2.gif 1x, mr-monacle-1.gif 2x" src="mr-monacle-1.gif"><img alt="" loading="lazy" width="256" height="75" decoding="async" data-nimg="1" class="absolute bottom-[-20px] left-1/2 -translate-x-1/2" style="color:transparent" srcset="character-shadow-lg.png 1x, character-shadow-lg-1.png 2x" src="character-shadow-lg-1.png"></div></section><section id="competition" style="background-image: url(&quot;bg-snow-land.jpg&quot;);" class="bg-cover bg-center relative py-4 lg:py-6 xl:py-10 bg-sky scroll-mt-total-header border-b-[3px] border-black"><div class="overflow-hidden lg:min-h-[757px] lg:flex lg:items-center"><div class="absolute top-0 bottom-0 right-0 h-full w-[788px] bg-linear-to-r from-transparent to-[#58C1F3E5]"></div><div class="min-h-[350px] md:min-h-[450px] relative container text-center lg:text-left"><img alt="Podium Penguins" loading="lazy" width="1400" height="760" decoding="async" data-nimg="1" class="absolute left-0 bottom-0 sm:bottom-[-50px] md:bottom-[-100px] lg:bottom-auto lg:left-[-250px]" style="color:transparent" srcset="podium-penguins-1.gif 1x, podium-penguins.gif 2x" src="podium-penguins.gif"><div class="relative z-[1] max-w-[477px] mx-auto lg:mr-0"><h2 class="font-heading uppercase text-shadow-[6px_6px_0px_#000] with-text-stroke text-3xl/[0.88] lg:text-5xl text-white mb-4"><span class="text-primary">1 BTC Jackpot</span><br>Per Week</h2><a target="_blank" class="group relative text-center font-bold cursor-pointer uppercase transition duration-100 border-2 border-black shadow-[5px_5px_0_0_#000] bg-primary text-black hover:brightness-[1.05] hover:translate-x-[1.5px] hover:translate-y-[1.5px] active:shadow-none active:translate-x-[5px] active:translate-y-[5px] px-6 py-3 text-sm block w-fit mt-[180px] md:mt-[300px] lg:mt-6 mx-auto lg:mx-0" href="http://bit.ly/3UwFpFa">Enter Now</a></div></div></div></section><section id="bitcoin-and-penguins" class="relative bg-sky scroll-mt-header border-b-[3px] border-black"><div class="overflow-hidden relative py-4 lg:py-6 xl:py-10"><div class="container text-center"><h2 class="font-heading uppercase text-shadow-[6px_6px_0px_#000] with-text-stroke text-3xl/[0.88] lg:text-5xl text-white mb-8 lg:mb-10"><span class="text-primary">Bitcoin</span> &amp; Penguins</h2><div class="relative max-w-[997px] mx-auto"><div class="absolute top-[-20px] right-[85px] lg:right-[200px] lg:top-0"><div class="font-bold text-xl lg:text-[46px]/[1] lg:mb-1">$114,754</div><div class="font-semibold uppercase">= 1 Bitcoin</div></div><img alt="Bitcoin and Penguins Graph" loading="lazy" width="997" height="383" decoding="async" data-nimg="1" class="mx-auto" style="color:transparent" src="bitcoin-penguins-graph-updated.svg"><img alt="Penguin Surfing" loading="lazy" width="346" height="346" decoding="async" data-nimg="1" class="absolute top-[-50px] right-[-40px] w-[123px] h-[123px] xs:top-[-20px] sm:top-0 lg:top-[-130px] lg:right-[-100px] lg:w-[346px] lg:h-[346px]" style="color:transparent" src="penguin-surfing.gif"></div></div></div></section><section id="buy-guide" class="relative bg-salmon scroll-mt-total-header border-b-[3px] border-black"><div class="overflow-hidden relative py-4 lg:py-6 xl:py-10"><div class="container text-center"><h2 class="font-heading uppercase text-shadow-[6px_6px_0px_#000] with-text-stroke text-3xl/[0.88] lg:text-5xl text-white mb-4 lg:mb-6 xl:mb-8">Buy Guide</h2><div class="max-w-[720px] mx-auto text-left"><div class="flex items-start gap-4 py-3"><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)]">1</div><div class="flex-1"><div class="flex items-center gap-4 justify-between cursor-pointer"><h3 class="font-semibold uppercase text-base select-none mt-[8px]">Connect Your Wallet</h3><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="transition-transform" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></div><div class="mt-2 hidden"><p class="text-base">Start by connecting your crypto wallet via the DEX.</p></div></div></div><div class="flex items-start gap-4 py-3 border-t-[3px] border-black"><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)]">2</div><div class="flex-1"><div class="flex items-center gap-4 justify-between cursor-pointer"><h3 class="font-semibold uppercase text-base select-none mt-[8px]">Choose Your Network</h3><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="transition-transform" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></div><div class="mt-2 hidden"><p class="text-base">Decide which blockchain network you’d like to use. We support SOL, ETH and BSC.</p></div></div></div><div class="flex items-start gap-4 py-3 border-t-[3px] border-black"><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)]">3</div><div class="flex-1"><div class="flex items-center gap-4 justify-between cursor-pointer"><h3 class="font-semibold uppercase text-base select-none mt-[8px]">Choose a Currency</h3><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="transition-transform" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></div><div class="mt-2 hidden"><p class="text-base">Select the token you'd like to use for your purchase—this should be the one you already hold in your wallet (e.g., SOL, ETH, USDT, etc.).</p></div></div></div><div class="flex items-start gap-4 py-3 border-t-[3px] border-black"><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)]">4</div><div class="flex-1"><div class="flex items-center gap-4 justify-between cursor-pointer"><h3 class="font-semibold uppercase text-base select-none mt-[8px]">Enter Purchase Amount</h3><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="transition-transform" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></div><div class="mt-2 hidden"><p class="text-base">Input how much you want to buy. Be sure you’ve got enough gas or network fees to complete the transaction.</p></div></div></div><div class="flex items-start gap-4 py-3 border-t-[3px] border-black"><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)]">5</div><div class="flex-1"><div class="flex items-center gap-4 justify-between cursor-pointer"><h3 class="font-semibold uppercase text-base select-none mt-[8px]">Approve in Wallet</h3><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="transition-transform" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></div><div class="mt-2 hidden"><p class="text-base">You’ll be redirected to your wallet to confirm the transaction. Once approved, your purchase will be securely recorded on-chain.</p></div></div></div><div class="flex items-start gap-4 py-3 border-t-[3px] border-black"><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)]">6</div><div class="flex-1"><div class="flex items-center gap-4 justify-between cursor-pointer"><h3 class="font-semibold uppercase text-base select-none mt-[8px]">Stay on Page</h3><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="transition-transform" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></div><div class="mt-2 hidden"><p class="text-base">Avoid closing or refreshing the page until your transaction is confirmed. A popup will notify you once it's complete.</p></div></div></div><div class="flex items-start gap-4 py-3 border-t-[3px] border-black"><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)]">7</div><div class="flex-1"><div class="flex items-center gap-4 justify-between cursor-pointer"><h3 class="font-semibold uppercase text-base select-none mt-[8px]">DEX Sync</h3><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="transition-transform" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></div><div class="mt-2 hidden"><p class="text-base">Each time you connect your wallet, the DEX will automatically display how many tokens you’ve purchased.</p></div></div></div><div class="flex items-start gap-4 py-3 border-t-[3px] border-black"><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)]">8</div><div class="flex-1"><div class="flex items-center gap-4 justify-between cursor-pointer"><h3 class="font-semibold uppercase text-base select-none mt-[8px]">Claim Your Tokens</h3><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="transition-transform rotate-180" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></div><div class="mt-2 block"><p class="text-base">Token claiming will be enabled prior to listing. You’ll be able to retrieve your tokens once claim opens.</p></div></div></div><div class="flex items-start gap-4 py-3 border-t-[3px] border-black"><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)]">9</div><div class="flex-1"><div class="flex items-center gap-4 justify-between cursor-pointer"><h3 class="font-semibold uppercase text-base select-none mt-[8px]">Welcome to Bitcoin Penguins</h3><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" class="transition-transform" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z"></path></svg></div><div class="mt-2 hidden"><p class="text-base">You’re officially in! If you have any questions, our Telegram mods are here to help—just remember, they’ll never DM you first.</p></div></div></div></div></div><img alt="Penguin Guide" loading="lazy" width="340" height="419" decoding="async" data-nimg="1" class="absolute bottom-[-50px] right-[-100px] hidden lg:block" style="color:transparent" srcset="penguin-guide-1.gif 1x, penguin-guide.gif 2x" src="penguin-guide.gif"></div></section><section id="tokenomics" class="relative bg-egg-shell scroll-mt-total-header border-b-[3px] border-black"><div class="overflow-hidden py-4 lg:py-6 xl:py-10 relative"><div class="container text-center"><h2 class="font-heading uppercase text-shadow-[6px_6px_0px_#000] with-text-stroke text-3xl/[0.88] lg:text-5xl text-white mb-4">Tokenomics</h2><div class="font-bold uppercase">30 Day Presale</div><div class="font-semibold uppercase text-base mb-4 lg:mb-6 xl:mb-10">Claim &amp; Listing 2 September</div><div class="grid gap-4 lg:grid-cols-2 max-w-[1100px] mx-auto"><div class="w-full"><table class="w-full mb-4 lg:mb-8"><thead class="font-bold uppercase"><tr><th>Stage</th><th>Price ($)</th><th>Increase</th></tr></thead><tbody><tr class="font-semibold"><td class="px-2 py-2"><div class="bg-red-400 text-black border-2 border-black uppercase text-base">Sold Out</div></td><td class="px-2 py-2">$<!-- -->0.00100</td><td class="px-2 py-2">-</td></tr><tr class="font-semibold bg-black text-white"><td class="px-2 py-2"><div class="bg-red-400 text-black border-2 border-black uppercase text-base">Sold Out</div></td><td class="px-2 py-2">$<!-- -->0.00105</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold"><td class="px-2 py-2"><div class="bg-red-400 text-black border-2 border-black uppercase text-base">Sold Out</div></td><td class="px-2 py-2">$<!-- -->0.00110</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold bg-black text-white"><td class="px-2 py-2">4</td><td class="px-2 py-2">$<!-- -->0.00116</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold"><td class="px-2 py-2">5</td><td class="px-2 py-2">$<!-- -->0.00122</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold bg-black text-white"><td class="px-2 py-2">6</td><td class="px-2 py-2">$<!-- -->0.00128</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold"><td class="px-2 py-2">7</td><td class="px-2 py-2">$<!-- -->0.00134</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold bg-black text-white"><td class="px-2 py-2">8</td><td class="px-2 py-2">$<!-- -->0.00141</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold"><td class="px-2 py-2">9</td><td class="px-2 py-2">$<!-- -->0.00148</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold bg-black text-white"><td class="px-2 py-2">10</td><td class="px-2 py-2">$<!-- -->0.00155</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold"><td class="px-2 py-2">11</td><td class="px-2 py-2">$<!-- -->0.00163</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold bg-black text-white"><td class="px-2 py-2">12</td><td class="px-2 py-2">$<!-- -->0.00171</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold"><td class="px-2 py-2">13</td><td class="px-2 py-2">$<!-- -->0.00180</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold bg-black text-white"><td class="px-2 py-2">14</td><td class="px-2 py-2">$<!-- -->0.00189</td><td class="px-2 py-2">5%</td></tr><tr class="font-semibold"><td class="px-2 py-2">15</td><td class="px-2 py-2">$<!-- -->0.00198</td><td class="px-2 py-2">5%</td></tr></tbody></table><div class="text-center"><div class="font-bold uppercase mb-1">Token Address</div><a target="_blank" rel="noopener noreferrer" class="font-semibold break-all hover:text-primary" href="https://solscan.io/token/9L2d5gHyo9HhmPzZ9YgErJu2bd1RwSCoxEqeb4DrJHdL">9L2d5gHyo9HhmPzZ9YgErJu2bd1RwSCoxEqeb4DrJHdL</a></div></div><div><div class="font-bold uppercase mb-1">Total Tokens</div><div class="font-semibold mb-4 lg:mb-6">10,000,000,000</div><img alt="Tokenomics Chart" loading="lazy" width="323" height="323" decoding="async" data-nimg="1" class="mx-auto mb-4 lg:mb-6" style="color:transparent" src="tokenomics.svg"><div class="text-left max-w-[460px] mx-auto"><div class="flex justify-between text-base font-semibold uppercase pb-1 border-b-[3px] border-black"><div>Allocation</div><div class="pr-2">%</div></div><div class="space-y-1 mt-1"><div class="flex items-center justify-between gap-2 pb-1 border-b-[3px] border-black"><div class="font-semibold uppercase flex items-center gap-2"><div class="border-[3px] border-black size-[25px] bg-primary"></div><div>Presale</div></div><div class="font-semibold text-2xl"><!-- -->%</div></div><div class="flex items-center justify-between gap-2 pb-1 border-b-[3px] border-black"><div class="font-semibold uppercase flex items-center gap-2"><div class="border-[3px] border-black size-[25px] bg-[#8AB1FF]"></div><div>Staking</div></div><div class="font-semibold text-2xl">20<!-- -->%</div></div><div class="flex items-center justify-between gap-2 pb-1 border-b-[3px] border-black"><div class="font-semibold uppercase flex items-center gap-2"><div class="border-[3px] border-black size-[25px] bg-salmon"></div><div>Liquidity</div></div><div class="font-semibold text-2xl">10<!-- -->%</div></div><div class="flex items-center justify-between gap-2 pb-1 border-b-[3px] border-black"><div class="font-semibold uppercase flex items-center gap-2"><div class="border-[3px] border-black size-[25px] bg-sky"></div><div>Cold Storage Vault</div></div><div class="font-semibold text-2xl">5<!-- -->%</div></div><div class="flex items-center justify-between gap-2 pb-1 border-b-[3px] border-black"><div class="font-semibold uppercase flex items-center gap-2"><div class="border-[3px] border-black size-[25px] bg-sand"></div><div>NFT Giveaways &amp; Airdrops</div></div><div class="font-semibold text-2xl">5<!-- -->%</div></div><div class="flex items-center justify-between gap-2 pb-1 border-b-[3px] border-black"><div class="font-semibold uppercase flex items-center gap-2"><div class="border-[3px] border-black size-[25px] bg-[#D9D9D9]"></div><div>Penguin Charity Fund</div></div><div class="font-semibold text-2xl">2<!-- -->%</div></div><div class="flex items-center justify-between gap-2 pb-1 border-b-[3px] border-black"><div class="font-semibold uppercase flex items-center gap-2"><div class="border-[3px] border-black size-[25px] bg-[#A7EEE7]"></div><div>Team &amp; Advisors</div></div><div class="font-semibold text-2xl">3<!-- -->%</div></div></div></div></div></div></div><img alt="Penguin Sword" loading="lazy" width="451" height="419" decoding="async" data-nimg="1" class="right-0 absolute 2xl:bottom-[-100px] 2xl:left-[-130px] hidden 2xl:block" style="color:transparent" srcset="penguin-sword-1.gif 1x, penguin-sword.gif 2x" src="penguin-sword.gif"></div></section><section id="roadmap" class="relative bg-sand py-4 lg:py-6 xl:py-10 scroll-mt-total-header border-b-[3px] border-black"><div class="overflow-hidden relative"><div class="container text-center"><h2 class="font-heading uppercase text-shadow-[6px_6px_0px_#000] with-text-stroke text-3xl/[0.88] lg:text-5xl text-white mb-4 lg:mb-6 xl:mb-8">Roadmap</h2><div class="grid lg:grid-cols-3"><div class="flex flex-col items-center relative"><div class="hidden lg:block absolute top-[200px] left-[60%] h-[3px] w-[79%] bg-black z-0"></div><div class="lg:h-[180px] lg:flex lg:items-end relative"><img alt="" loading="lazy" width="76" height="22" decoding="async" data-nimg="1" class="absolute bottom-[13px] left-[45px]" style="color:transparent" srcset="character-shadow.png 1x, character-shadow-1.png 2x" src="character-shadow-1.png"><img alt="Roadmap Image 1" loading="lazy" width="157" height="157" decoding="async" data-nimg="1" class="mx-auto mt-auto mb-2 relative z-[1]" style="color:transparent" src="waistcoat.gif"></div><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)] mb-4">1</div><div class="font-bold mb-2">Q3 2025</div><div class="font-semibold text-base uppercase mb-2">30 Day Flash Presale</div><ul class="!list-none text-base font-[500] space-y-1 !pl-0"><li>- <!-- -->15-Stage Flash Presale Over 30 Days</li><li>- <!-- -->Weekly BTC Competition Draw</li><li>- <!-- -->Partnership Announcements</li></ul><div class="font-semibold text-base uppercase mb-2">Listing</div><ul class="!list-none text-base font-[500] space-y-1 !pl-0"><li>- <!-- -->DEX Launch 72hrs After Presale</li><li>- <!-- -->Target $500B FDV – September</li></ul></div><div class="flex flex-col items-center relative"><div class="hidden lg:block absolute top-[200px] left-[60%] h-[3px] w-[79%] bg-black z-0"></div><div class="lg:h-[180px] lg:flex lg:items-end relative"><img alt="" loading="lazy" width="76" height="22" decoding="async" data-nimg="1" class="absolute bottom-[24px] left-[55px]" style="color:transparent" srcset="character-shadow.png 1x, character-shadow-1.png 2x" src="character-shadow-1.png"><img alt="Roadmap Image 2" loading="lazy" width="179" height="179" decoding="async" data-nimg="1" class="mx-auto mb-2 relative z-[1]" style="color:transparent" src="bandana.gif"></div><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)] mb-4">2</div><div class="font-bold mb-2">Q4 2025</div><div class="font-semibold text-base uppercase mb-2">March of The Penguins</div><ul class="!list-none text-base font-[500] space-y-1 !pl-0"><li>- <!-- -->Target $1B FDV – October</li><li>- <!-- -->Target Price $2 (1000x) – November</li><li>- <!-- -->1M Token Holders in the Colony – December</li><li>- <!-- -->BTC‑BPENGU Pair Announced</li><li>- <!-- -->CEX Invite to Listing</li><li>- <!-- -->Toy Manufacturer Partnerships</li><li>- <!-- -->Multi-Chain Meme Invasion</li></ul></div><div class="flex flex-col items-center"><div class="lg:h-[180px] lg:flex lg:items-end relative"><img alt="" loading="lazy" width="76" height="22" decoding="async" data-nimg="1" class="absolute bottom-[16px] left-[52px]" style="color:transparent" srcset="character-shadow.png 1x, character-shadow-1.png 2x" src="character-shadow-1.png"><img alt="Roadmap Image 3" loading="lazy" width="167" height="167" decoding="async" data-nimg="1" class="mx-auto mb-2 relative z-[1]" style="color:transparent" src="penguin-trio-right.gif"></div><div class="font-semibold min-w-[41px] size-[41px] bg-white flex items-center justify-center rounded-full border-[3px] border-black [filter:drop-shadow(2px_2px_0px_#000)] mb-4">3</div><div class="font-bold mb-2">Q4 2025</div><div class="font-semibold text-base uppercase mb-2">Global Penguin Mania Takes Hold</div><ul class="!list-none text-base font-[500] space-y-1 !pl-0"><li>- <!-- -->Mass Retail Adoption</li><li>- <!-- -->Top 10 Meme Coinmarketcap</li><li>- <!-- -->Penguin Ice Cream Empire</li><li>- <!-- -->10M Holder March</li><li>- <!-- -->$10B+ FDV</li><li>- <!-- -->Community gathering (Penguin-themed)</li></ul></div></div><a href="./wallet/index.html"><button type="button" class="group relative text-center font-bold cursor-pointer uppercase transition duration-100 border-2 border-black shadow-[5px_5px_0_0_#000] bg-primary text-black hover:brightness-[1.05] hover:translate-x-[1.5px] hover:translate-y-[1.5px] active:shadow-none active:translate-x-[5px] active:translate-y-[5px] px-6 py-3 text-sm block w-fit mx-auto lg:mt-6">Buy Now</button></a></div></div></section><section id="calculator" class="relative bg-sky py-4 lg:py-6 xl:py-10 overflow-hidden border-b-[3px] border-black"><div class="container text-center"><h2 class="font-heading uppercase text-shadow-[6px_6px_0px_#000] with-text-stroke text-3xl/[0.88] lg:text-5xl text-white max-w-[1000px] mx-auto mb-4 lg:mb-6 xl:mb-8">What Will <span class="text-primary">$BPENGU</span> Be Worth?</h2><div class="font-bold uppercase mb-4 lg:mb-6">Stages Calculator</div><div class="max-w-[600px] mx-auto grid sm:grid-cols-2 gap-2 lg:gap-4 mb-4 lg:mb-6 xl:mb-8"><div><div class="text-base font-semibold text-center mb-1">You Pay</div><div class="bg-white border-[3px] border-black p-2 flex items-center justify-between gap-2"><input class="w-full font-semibold focus:outline-none" type="number" inputmode="decimal" placeholder="0.00" value="0.006835291686348606"><div class="relative"><button type="button" class="cursor-pointer text-base font-semibold flex gap-1 items-center hover:text-primary">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></button></div></div></div><div><div class="text-base font-semibold text-center mb-1">You Receive</div><div class="bg-white border-[3px] border-black p-2 flex items-center justify-between gap-2"><input class="w-full font-semibold focus:outline-none" type="number" placeholder="0" value="1000"><div class="text-base font-semibold flex gap-1 items-center">$<!-- -->BPENGU<img alt="" loading="lazy" width="19" height="19" decoding="async" data-nimg="1" class="block mr-4" style="color:transparent" src="bpengu.svg"></div></div></div></div><div class="w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw]"><div class="hidden lg:block absolute top-0 bottom-0 left-0 w-[130px] bg-linear-to-r from-sky to-transparent z-[1]"></div><div class="hidden lg:block absolute top-0 bottom-0 right-0 w-[130px] bg-linear-to-r from-transparent to-sky z-[1]"></div><div class="keen-slider opacity-100 transition-opacity duration-300"><div class="keen-slider__slide" style="transform: translate3d(526.894px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black text-white border-[3px] border-black px-4 py-2 cursor-pointer lg:bg-black lg:text-white"><div class="font-bold uppercase">Stage 5</div><div class="block"><div class="text-2xl font-semibold">5%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0072</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(556.894px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 6</div><div class="lg:hidden"><div class="text-2xl font-semibold">10.3%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0075</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(586.894px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 7</div><div class="lg:hidden"><div class="text-2xl font-semibold">15.8%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0079</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(616.894px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 8</div><div class="lg:hidden"><div class="text-2xl font-semibold">21.6%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0083</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(-1671.44px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 9</div><div class="lg:hidden"><div class="text-2xl font-semibold">27.6%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0087</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(-1641.44px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 10</div><div class="lg:hidden"><div class="text-2xl font-semibold">34%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0092</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(-1611.44px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 11</div><div class="lg:hidden"><div class="text-2xl font-semibold">40.7%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0096</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(-1581.44px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 12</div><div class="lg:hidden"><div class="text-2xl font-semibold">47.7%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0101</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(-1551.44px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 13</div><div class="lg:hidden"><div class="text-2xl font-semibold">55.1%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0106</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(-1521.44px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 14</div><div class="lg:hidden"><div class="text-2xl font-semibold">62.9%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0111</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div><div class="keen-slider__slide" style="transform: translate3d(-1491.44px, 0px, 0px); min-width: 180.758px; max-width: 180.758px;"><div class="bg-black lg:bg-white text-white lg:text-black border-[3px] border-black px-4 py-2 cursor-pointer hover:bg-gray-100"><div class="font-bold uppercase">Stage 15</div><div class="lg:hidden"><div class="text-2xl font-semibold">71%</div><div class="text-base font-semibold uppercase">Returns</div><div class="bg-white text-black -mx-4 -mb-2 mt-2 p-2"><div class="text-xl font-semibold mb-1">0.0117</div><div class="flex items-center justify-center gap-1 text-base font-semibold uppercase">SOL <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="currentColor" d="M18.413 7.901a.62.62 0 0 1-.411.164H3.58c-.512 0-.77-.585-.416-.928l2.368-2.284a.6.6 0 0 1 .41-.169h14.479c.517 0 .77.59.41.934zm0 11.257a.6.6 0 0 1-.411.158H3.58c-.512 0-.77-.58-.416-.923l2.368-2.289a.6.6 0 0 1 .41-.163h14.479c.517 0 .77.585.41.928zm0-8.685a.6.6 0 0 0-.411-.157H3.58c-.512 0-.77.58-.416.922l2.368 2.29a.62.62 0 0 0 .41.163h14.479c.517 0 .77-.585.41-.928z"></path></svg></div></div></div></div></div></div></div><img alt="" loading="lazy" width="968" height="416" decoding="async" data-nimg="1" class="mx-auto mt-6" style="color:transparent" src="future-value.svg"><a href="./wallet/index.html"><button type="button" class="group relative text-center font-bold cursor-pointer uppercase transition duration-100 border-2 border-black shadow-[5px_5px_0_0_#000] bg-primary text-black hover:brightness-[1.05] hover:translate-x-[1.5px] hover:translate-y-[1.5px] active:shadow-none active:translate-x-[5px] active:translate-y-[5px] px-6 py-3 text-sm block w-fit h-fit mx-auto mt-6">Buy Now</button></a></div></section><section id="staking" style="background-image: url(&quot;staking-bg.jpg&quot;);" class="bg-cover bg-center relative bg-sky py-4 lg:py-6 xl:py-10 scroll-mt-total-header"><div class="overflow-hidden relative"><div class="container text-center"><h2 class="font-heading uppercase text-shadow-[6px_6px_0px_#000] with-text-stroke text-3xl/[0.88] lg:text-5xl text-white mb-4 lg:mb-6 xl:mb-8">Staking</h2><div class="grid gap-4 lg:grid-cols-[3fr_1fr]"><div><div class="grid md:gap-4 md:grid-cols-3 mb-4"><div class=""><div class="flex items-end h-[230px]"><img alt="Prawn" loading="lazy" width="286" height="243" decoding="async" data-nimg="1" class="mx-auto mb-5" style="color:transparent" srcset="shrimp.gif 1x, shrimp-1.gif 2x" src="shrimp-1.gif"></div><div class="mb-1"><span class="text-sm text-shadow-[1px_1px_0_#000] with-text-stroke-sm font-bold"><span class="text-primary">17.19M</span> <span class="text-white">(<!-- -->Pool Size:<!-- --> <!-- -->700.00M<!-- -->)</span></span></div><div class="bg-black border-[3px] border-black h-[16px] w-[150px] mx-auto mb-1"><div class="h-full bg-linear-to-r from-[#FFF5DD] via-[#FFE09B] to-primary" style="width:2.4558164285714286%"></div></div><div class="font-heading text-xl text-white with-text-stroke text-shadow-[3px_3px_0_#000] uppercase">Prawn</div><div class="text-lg font-bold">1 Month Lock</div><div class="text-sm font-semibold">Unlocks On 2nd October</div><div class="text-lg font-semibold">50% APY</div></div><div class=""><div class="flex items-end h-[230px]"><img alt="Fish" loading="lazy" width="337" height="157" decoding="async" data-nimg="1" class="mx-auto" style="color:transparent" srcset="fish.gif 1x, fish-1.gif 2x" src="fish-1.gif"></div><div class="mb-1"><span class="text-sm text-shadow-[1px_1px_0_#000] with-text-stroke-sm font-bold"><span class="text-primary">14.51M</span> <span class="text-white">(<!-- -->Pool Size:<!-- --> <!-- -->200.00M<!-- -->)</span></span></div><div class="bg-black border-[3px] border-black h-[16px] w-[150px] mx-auto mb-1"><div class="h-full bg-linear-to-r from-[#FFF5DD] via-[#FFE09B] to-primary" style="width: 7.25729%;"></div></div><div class="font-heading text-xl text-white with-text-stroke text-shadow-[3px_3px_0_#000] uppercase">Fish</div><div class="text-lg font-bold">2 Month Lock</div><div class="text-sm font-semibold">Unlocks On 2nd November</div><div class="text-lg font-semibold">80% APY</div></div><div class=""><div class="flex items-end h-[230px]"><img alt="Whale" loading="lazy" width="400" height="236" decoding="async" data-nimg="1" class="mx-auto" style="color:transparent" srcset="big-fish.gif 1x, big-fish-1.gif 2x" src="big-fish-1.gif"></div><div class="mb-1"><span class="text-sm text-shadow-[1px_1px_0_#000] with-text-stroke-sm font-bold"><span class="text-primary">32.21M</span> <span class="text-white">(<!-- -->Pool Size:<!-- --> <!-- -->100.00M<!-- -->)</span></span></div><div class="bg-black border-[3px] border-black h-[16px] w-[150px] mx-auto mb-1"><div class="h-full bg-linear-to-r from-[#FFF5DD] via-[#FFE09B] to-primary" style="width: 32.2073%;"></div></div><div class="font-heading text-xl text-white with-text-stroke text-shadow-[3px_3px_0_#000] uppercase">Whale</div><div class="text-lg font-bold">3 Month Lock</div><div class="text-sm font-semibold">Unlocks On 2nd December</div><div class="text-lg font-semibold">100% APY</div></div></div><div class="grid gap-4 md:grid-cols-3"><div class="flex flex-col bg-white border-[3px] border-black p-3 w-full max-w-[230px] mx-auto text-center text-base"><div class="font-bold uppercase mb-1">Staked Balance</div><div class="font-semibold mb-3">0 BPENGU</div><div class="font-bold uppercase mb-1">Your Stakable</div><div class="flex-1 font-semibold mb-4">0 BPENGU</div><button type="button" class="group relative text-center font-bold cursor-pointer uppercase transition duration-100 border-2 border-black shadow-[5px_5px_0_0_#000] bg-primary text-black hover:brightness-[1.05] hover:translate-x-[1.5px] hover:translate-y-[1.5px] active:shadow-none active:translate-x-[5px] active:translate-y-[5px] px-6 text-sm w-full h-[46px] py-0">Stake Now</button></div><div class="flex flex-col bg-white border-[3px] border-black p-3 w-full max-w-[230px] mx-auto text-center text-base"><div class="font-bold uppercase mb-1">% of Pool</div><div class="font-semibold mb-3">0 %</div><div class="font-bold uppercase mb-1">Total Staked</div><div class="flex-1 font-semibold mb-4">0 BPENGU</div><button type="button" class="group relative text-center font-bold uppercase transition duration-100 border-2 border-black shadow-[5px_5px_0_0_#000] bg-[#d0d0d0] text-black opacity-30 px-6 text-sm opacity/50 cursor-not-allowed w-full h-[46px] py-0" disabled="">Withdraw Staked Tokens</button></div><div class="flex flex-col bg-white border-[3px] border-black p-3 w-full max-w-[230px] mx-auto text-center text-base"><div class="flex flex-col justify-center flex-1"><div class="font-bold uppercase mb-1">Total Rewards</div><div class="font-semibold mb-3">0 BPENGU</div></div><button type="button" class="group relative text-center font-bold uppercase transition duration-100 border-2 border-black shadow-[5px_5px_0_0_#000] bg-[#d0d0d0] text-black opacity-30 px-6 text-sm opacity/50 cursor-not-allowed w-full h-[46px] py-0" disabled="">Claim Rewards</button></div></div></div><div class="bg-white p-4 lg:pt-5 border-[3px] border-black"><div class="font-heading text-primary with-text-stroke text-shadow-[3px_3px_0_#000] uppercase text-xl mb-1">Leaderboard</div><div class="font-semibold text-base mb-2 lg:mb-4">Top 30</div><div class="lg:px-2"><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base border border-black rounded-full flex font-semibold items-center justify-center bg-primary text-black">1</div><img alt="crown" loading="lazy" width="15" height="13" decoding="async" data-nimg="1" src="crown.svg" style="color: transparent;"></div><div class="flex-1 text-left text-base font-semibold">xxxxd95c</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$12669.28</div></div></div><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base text-white border border-black rounded-full bg-black flex font-semibold items-center justify-center">2</div></div><div class="flex-1 text-left text-base font-semibold">xxxxKiKi</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$9899.66</div></div></div><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base text-white border border-black rounded-full bg-black flex font-semibold items-center justify-center">3</div></div><div class="flex-1 text-left text-base font-semibold">xxxxm5ie</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$9390.66</div></div></div><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base text-white border border-black rounded-full bg-black flex font-semibold items-center justify-center">4</div></div><div class="flex-1 text-left text-base font-semibold">xxxxewAj</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$7959.01</div></div></div><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base text-white border border-black rounded-full bg-black flex font-semibold items-center justify-center">5</div></div><div class="flex-1 text-left text-base font-semibold">xxxxf191</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$6969.36</div></div></div><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base text-white border border-black rounded-full bg-black flex font-semibold items-center justify-center">6</div></div><div class="flex-1 text-left text-base font-semibold">xxxx5Bsz</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$6801.38</div></div></div><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base text-white border border-black rounded-full bg-black flex font-semibold items-center justify-center">7</div></div><div class="flex-1 text-left text-base font-semibold">xxxx5032</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$4949.83</div></div></div><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base text-white border border-black rounded-full bg-black flex font-semibold items-center justify-center">8</div></div><div class="flex-1 text-left text-base font-semibold">xxxx1f28</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$4898.02</div></div></div><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base text-white border border-black rounded-full bg-black flex font-semibold items-center justify-center">9</div></div><div class="flex-1 text-left text-base font-semibold">xxxxGMxE</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$4738.37</div></div></div><div class="flex justify-between items-center border-b border-black py-2"><div class="flex gap-2 min-w-[100px]"><div class="min-w-[27px] aspect-square size-[27px] text-base text-white border border-black rounded-full bg-black flex font-semibold items-center justify-center">10</div></div><div class="flex-1 text-left text-base font-semibold">xxxx24d1</div><div class="text-base text-right"><div class="text-xs font-semibold uppercase">Total Staked</div><div class="font-semibold">$4259.38</div></div></div><div class="flex items-center justify-between mt-4"><button type="button" disabled="" class="py-2 pr-1 cursor-pointer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z"></path></svg></button><div class="text-sm font-semibold">1 / 3</div><button type="button" class="py-2 pr-1 cursor-pointer hover:text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></button></div></div></div></div></div></div></section></main><!--$--><!--/$--></main><footer class="bg-black py-4 lg:py-6 xl:py-9"><div class="container"><div class="grid gap-4 sm:grid-cols-2 sm:justify-between mb-4 lg:mb-6"><div class="flex gap-4 justify-center sm:justify-start"><img alt="Bitcoin Penguins Logo" loading="lazy" width="100" height="77" decoding="async" data-nimg="1" class="min-w-[100px]" style="color:transparent" srcset="penguin-trio-1.gif 1x, penguin-trio.gif 2x" src="penguin-trio.gif"><div class="font-heading text-2xl/[1] uppercase"><span class="text-primary">Bitcoin</span><br><span class="text-white">Penguins</span></div></div><div class="flex items-start justify-center gap-4 sm:justify-end"><a href="https://x.com/BitcoinPenguins" target="_blank" rel="noopener noreferrer" class="bg-white min-w-[50px] aspect-square flex items-center justify-center rounded-full hover:text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a href="https://t.me/BitcoinPenguinsOfficial" target="_blank" rel="noopener noreferrer" class="bg-white min-w-[50px] aspect-square flex items-center justify-center rounded-full hover:text-primary"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg></a></div></div><div class="grid gap-2 sm:justify-between sm:grid-cols-2 text-center sm:text-left"><div class="space-x-4 uppercase underline sm:text-right"><a href="mailto:contact@bitcoinpenguins.io" class="text-sm text-white hover:text-primary">Contact Us</a><a class="text-sm text-white hover:text-primary" href="./wallet/index.html">Terms &amp; Privacy Policy</a></div><div class="text-sm text-white sm:order-first">Copyright © <!-- -->2025<!-- --> Bitcoin Penguins. All rights reserved.</div></div></div></footer><h2 id="radix-_R_qtivbH1_" class="sr-only">Connect Wallet</h2><h2 id="radix-_R_1ativbH1_" class="sr-only">Select Payment Method</h2><div class="fixed bottom-4 left-4 space-y-2 z-50"></div><next-route-announcer style="position: absolute;" data-scrapbook-shadowdom="<div aria-live=&quot;assertive&quot; id=&quot;__next-route-announcer__&quot; role=&quot;alert&quot; style=&quot;position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;&quot;></div>"></next-route-announcer> 
+
+<noscript><a href="https://www.livechat.com/chat-with/19244977/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+
+<iframe height="0" width="0" style="display: none; visibility: hidden;" src="index_1.html"></iframe><w3m-modal style="--local-border-bottom-mobile-radius: 0px;" data-scrapbook-adoptedstylesheets="0" data-scrapbook-shadowdom="<!---->"></w3m-modal><script data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", k8 = "data-scrapbook-adoptedstylesheets", k9 = /^data-scrapbook-adoptedstylesheet-(\d+)$/, k10 = "data-scrapbook-shadowdom-mode", k11 = "data-scrapbook-shadowdom-clonable", k12 = "data-scrapbook-shadowdom-delegates-focus", k13 = "data-scrapbook-shadowdom-serializable", k14 = "data-scrapbook-shadowdom-slot-assignment", k15 = "data-scrapbook-slot-assigned", k16 = "data-scrapbook-slot-index", k17 = /^scrapbook-slot-index=(\d+)$/, k18 = '/scrapbook-slot-index', d = document, r = d.documentElement, $s = !!r.attachShadow, $as = !!d.adoptedStyleSheets, $c = !!window.HTMLCanvasElement, $sa = !!d.createElement('slot').assign, sle = [], sls = [], slt = function (r) { if ($sa) { var E = r.childNodes, i, e, s, m; for (i = 0; i < E.length; i++) { e = E[i]; if (e.nodeType === 8) { s = e.nodeValue; if (m = s.match(k17)) { s = e.nextSibling; if (s.nodeType === 3) { sls[m[1]] = s; } r.removeChild(e); i--; } else if (s === k18) { r.removeChild(e); i--; } } } } }, sl = function () { var i = sle.length, j, d, e; while (i--) { d = sle[i]; e = d.elem; d = d.value.split(','); j = d.length; while (j--) { d[j] = sls[parseInt(d[j], 10)]; } try { e.assign.apply(e, d); } catch (ex) { console.error(ex); } } }, asl = (function (r) { var l = [], E, i, e, m, c, j; if ($as) { E = r.attributes; i = E.length; while (i--) { e = E[i]; if (!(m = e.nodeName.match(k9))) { continue; } c = l[m[1]] = new CSSStyleSheet(); r.removeAttribute(m[0]); m = e.nodeValue.split('\n\n'); j = m.length; while (j--) { try { m[j] && c.insertRule(m[j]); } catch (ex) { console.error(ex); } } } } return l; })(r), as = function (d, e) { var l, i, I; if ($as && (l = e.getAttribute(k8)) !== null) { l = l.split(','); for (i = 0, I = l.length; i < I; i++) { d.adoptedStyleSheets.push(asl[l[i]]); } e.removeAttribute(k8); } }, fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s, m; while (i--) { e = E[i]; s = e.shadowRoot; if ($s && (d = e.getAttribute(k1))) { if (!s) { try { s = e.attachShadow({ mode: (m = e.getAttribute(k10)) !== null ? m : 'open', clonable: e.hasAttribute(k11), delegatesFocus: e.hasAttribute(k12), serializable: e.hasAttribute(k13), slotAssignment: (m = e.getAttribute(k14)) !== null ? m : void 0, }); s.innerHTML = d; } catch (ex) { console.error(ex); } } e.removeAttribute(k1); e.removeAttribute(k10); e.removeAttribute(k11); e.removeAttribute(k12); e.removeAttribute(k13); e.removeAttribute(k14); } if ($c && (d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if ($sa && (d = e.getAttribute(k15)) !== null) { sle.push({elem: e, value: d}); e.removeAttribute(k15); } if ($sa && (d = e.getAttribute(k16)) !== null) { sls[d] = e; e.removeAttribute(k16); } if (s) { slt(e); as(s, e); fn(s); } } }; as(d, r); fn(d); sl(); })()</script></body></html>
